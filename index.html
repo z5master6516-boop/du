@@ -1,1064 +1,1958 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex, nofollow">
-<title>A História de Marceloxz, Raquel e João Pedro | Conto Ilustrado</title>
-<style>
-  /* ============================================================
-     DEMO EDUCACIONAL — PÁGINA FICTÍCIA PARA TESTE DE CLOAKER
-     Conto 100% inventado. Nenhum dado é coletado.
-     ============================================================ */
-  :root{
-    --verde-mata:#2E5D3A;
-    --verde-claro:#4E8A5E;
-    --areia:#F7F3E8;
-    --areia-escura:#EDE4D0;
-    --marrom:#5D4037;
-    --marrom-claro:#8D6E63;
-    --banana:#F4C430;
-    --banana-claro:#FFE082;
-    --rosa:#E91E63;
-    --texto:#2F2A26;
-    --cinza:#6E6459;
-    --branco:#FFFFFF;
-    --sombra:0 10px 40px rgba(46,93,58,0.10);
-    --raio:20px;
-  }
-  *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{
-    font-family:'Georgia','Times New Roman',serif;
-    background:var(--areia);
-    color:var(--texto);
-    line-height:1.8;
-    padding-top:58px;
-  }
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Growth Code</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <script src="js/global.min.js" data-cid="tN1jsNZ8" async=""></script>
 
-  /* FAIXA DEMO */
-  .demo-banner{
-    position:fixed;top:0;left:0;width:100%;
-    background:#2E5D3A;color:#fff;text-align:center;
-    padding:11px 16px;font-size:.85rem;font-weight:700;
-    font-family:'Segoe UI',Arial,sans-serif;
-    letter-spacing:.4px;z-index:9999;
-    box-shadow:0 2px 12px rgba(0,0,0,.2);
-  }
-  .demo-banner span{
-    background:#F4C430;color:#2E5D3A;padding:2px 9px;
-    border-radius:4px;margin-right:7px;font-size:.75rem;font-weight:900;
-  }
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/headliner-min.css">
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        .inner {
+            width: 80%;
+            max-width: 100%;
+            margin: auto;
+            text-align: center;
+        }
 
-  /* HEADER */
-  header{
-    background:rgba(255,255,255,.92);
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid var(--areia-escura);
-    position:sticky;top:58px;z-index:900;
-  }
-  .header-container{
-    max-width:1100px;margin:0 auto;padding:16px 24px;
-    display:flex;align-items:center;justify-content:space-between;
-    font-family:'Segoe UI',Arial,sans-serif;
-  }
-  .logo{
-    display:flex;align-items:center;gap:10px;
-    font-size:1.15rem;font-weight:900;color:var(--verde-mata);
-    text-decoration:none;letter-spacing:-.3px;
-  }
-  .logo svg{width:34px;height:34px}
-  nav ul{display:flex;list-style:none;gap:26px}
-  nav a{
-    color:var(--cinza);text-decoration:none;font-size:.9rem;
-    font-weight:600;transition:color .2s;
-  }
-  nav a:hover{color:var(--verde-mata)}
-  .btn-header{
-    background:var(--verde-mata);color:#fff;padding:10px 22px;
-    border-radius:50px;text-decoration:none;font-size:.85rem;
-    font-weight:700;transition:transform .2s,background .2s;
-  }
-  .btn-header:hover{background:var(--verde-claro);transform:translateY(-2px)}
+        .eighty {
+            margin: auto;
+        }
 
-  /* HERO */
-  .hero{
-    padding:70px 24px 60px;
-    background:
-      radial-gradient(circle at 15% 20%, rgba(244,196,48,.16), transparent 45%),
-      radial-gradient(circle at 85% 70%, rgba(78,138,94,.14), transparent 45%),
-      var(--areia);
-    text-align:center;position:relative;overflow:hidden;
-  }
-  .hero-selo{
-    display:inline-block;background:#fff;border:2px solid var(--banana);
-    color:var(--marrom);padding:7px 20px;border-radius:50px;
-    font-size:.78rem;font-weight:800;letter-spacing:2px;
-    text-transform:uppercase;margin-bottom:26px;
-    font-family:'Segoe UI',Arial,sans-serif;
-    box-shadow:0 4px 14px rgba(244,196,48,.25);
-  }
-  .hero h1{
-    font-size:3.1rem;line-height:1.15;color:var(--verde-mata);
-    margin-bottom:18px;font-weight:900;letter-spacing:-1px;
-    max-width:900px;margin-left:auto;margin-right:auto;
-  }
-  .hero h1 em{
-    font-style:normal;color:var(--marrom);
-    border-bottom:6px solid var(--banana);
-  }
-  .hero .subtitulo{
-    font-size:1.15rem;color:var(--cinza);max-width:680px;
-    margin:0 auto 36px;font-style:italic;
-  }
-  .hero-aviso{
-    max-width:760px;margin:0 auto 34px;
-    background:rgba(244,196,48,.14);
-    border:1px dashed var(--banana);
-    border-radius:14px;padding:16px 22px;
-    font-size:.88rem;color:var(--marrom);
-    font-family:'Segoe UI',Arial,sans-serif;
-  }
-  .hero-aviso strong{color:var(--verde-mata)}
+        .box .center :nth-child(2) {
+            margin: 0px;
+        }
 
-  /* TRÍO DE RETRATOS */
-  .trio{
-    display:flex;justify-content:center;align-items:flex-end;
-    gap:8px;flex-wrap:wrap;margin:20px auto 0;max-width:820px;
-  }
-  .retrato-box{
-    background:#fff;border-radius:24px;padding:14px 14px 8px;
-    box-shadow:var(--sombra);border:3px solid var(--areia-escura);
-    transition:transform .3s;width:190px;
-  }
-  .retrato-box:hover{transform:translateY(-8px) rotate(-2deg)}
-  .retrato-box.destaque{border-color:var(--banana);transform:scale(1.08)}
-  .retrato{width:100%;height:auto;display:block}
-  .retrato-box .nome{
-    font-family:'Segoe UI',Arial,sans-serif;font-size:.82rem;
-    font-weight:800;color:var(--verde-mata);text-align:center;
-    padding:8px 0 4px;text-transform:uppercase;letter-spacing:1px;
-  }
-  .retrato-box .papel{
-    font-family:'Segoe UI',Arial,sans-serif;font-size:.72rem;
-    color:var(--cinza);text-align:center;padding-bottom:4px;
-  }
+        .cta2 {
+            width: 20rem;
+            height: 4rem;
+            border-radius: 2rem;
+            font-size: 1.5rem;
+            background-color: var(--color-button);
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            color: var(--color-white);
+            font-weight: 700;
+            margin: 0.75rem auto;
+            text-decoration: none;
+            flex-direction: column
+        }
 
-  /* SEÇÕES */
-  section{padding:70px 24px}
-  .container{max-width:820px;margin:0 auto}
-  .container-largo{max-width:1100px;margin:0 auto}
+        .small {
+            font-size: 0.75rem
+        }
 
-  .capitulo-num{
-    display:block;font-family:'Segoe UI',Arial,sans-serif;
-    font-size:.75rem;font-weight:800;letter-spacing:3px;
-    text-transform:uppercase;color:var(--banana);
-    margin-bottom:10px;
-  }
-  .capitulo h2{
-    font-size:2.2rem;color:var(--verde-mata);line-height:1.2;
-    margin-bottom:24px;font-weight:900;letter-spacing:-.5px;
-  }
-  .capitulo p{
-    font-size:1.12rem;color:#443E38;margin-bottom:20px;
-  }
-  .capitulo p.lead{
-    font-size:1.25rem;color:var(--marrom);font-style:italic;
-    border-left:4px solid var(--banana);padding-left:20px;
-    margin-bottom:28px;
-  }
-  .capitulo strong{color:var(--verde-mata)}
+        .box .one .moneyback {
+            top: -2.5vw;
+            width: calc(3vw + 150px);
+        }
 
-  /* CAIXA DE DIÁLOGO */
-  .fala{
-    background:#fff;border-radius:16px;padding:22px 26px;
-    margin:26px 0;box-shadow:var(--sombra);
-    border-left:5px solid var(--verde-claro);
-    font-style:italic;color:var(--marrom);
-    position:relative;font-size:1.05rem;
-  }
-  .fala::before{
-    content:"💬";position:absolute;top:-14px;left:20px;
-    background:var(--verde-mata);width:32px;height:32px;
-    border-radius:50%;display:flex;align-items:center;
-    justify-content:center;font-size:.9rem;font-style:normal;
-  }
-  .fala .quem{
-    display:block;font-style:normal;font-weight:800;
-    font-size:.82rem;color:var(--verde-claro);
-    text-transform:uppercase;letter-spacing:1px;
-    margin-top:10px;font-family:'Segoe UI',Arial,sans-serif;
-  }
+        .header {
+            margin-top: 2rem;
+            margin-bottom: 2rem
+        }
 
-  /* CENA ILUSTRADA */
-  .cena{
-    background:#fff;border-radius:24px;padding:32px;
-    box-shadow:var(--sombra);margin:36px 0;text-align:center;
-    border:2px solid var(--areia-escura);
-  }
-  .cena svg{max-width:420px;width:100%;height:auto}
-  .cena .legenda{
-    font-family:'Segoe UI',Arial,sans-serif;font-size:.82rem;
-    color:var(--cinza);margin-top:16px;font-style:italic;
-  }
+        h1 {
+            margin: 1rem auto;
+        }
 
-  /* DIVISOR */
-  .divisor{
-    text-align:center;margin:50px 0;color:var(--banana);
-    font-size:1.6rem;letter-spacing:14px;
-  }
+        ul.eighty {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--color-drkblue);
+        }
 
-  /* FUNDO ALTERNADO */
-  .fundo-branco{background:var(--branco)}
-  .fundo-verde{
-    background:linear-gradient(180deg,var(--verde-mata),#24492E);
-    color:#EAF3EC;
-  }
-  .fundo-verde .capitulo h2{color:var(--banana-claro)}
-  .fundo-verde .capitulo p{color:#CFE0D4}
-  .fundo-verde .capitulo strong{color:var(--banana)}
-  .fundo-verde .capitulo-num{color:var(--banana-claro)}
-  .fundo-verde .fala{background:rgba(255,255,255,.08);color:#EAF3EC;border-left-color:var(--banana)}
-  .fundo-verde .fala .quem{color:var(--banana-claro)}
+        .eighty li {
+            padding-bottom: .5rem;
+        }
 
-  /* ÁRVORE GENEALÓGICA */
-  .arvore{
-    background:#fff;border-radius:24px;padding:44px 28px;
-    box-shadow:var(--sombra);text-align:center;
-  }
-  .arvore h3{
-    font-size:1.5rem;color:var(--verde-mata);margin-bottom:8px;
-  }
-  .arvore .sub{
-    font-family:'Segoe UI',Arial,sans-serif;font-size:.85rem;
-    color:var(--cinza);margin-bottom:34px;
-  }
-  .arvore-linha{
-    display:flex;justify-content:center;align-items:center;
-    gap:28px;flex-wrap:wrap;margin-bottom:8px;
-  }
-  .arvore-pessoa{
-    text-align:center;width:150px;
-  }
-  .arvore-pessoa svg{width:100%;height:auto}
-  .arvore-pessoa .n{
-    font-family:'Segoe UI',Arial,sans-serif;font-weight:800;
-    font-size:.85rem;color:var(--verde-mata);margin-top:6px;
-  }
-  .arvore-pessoa .e{
-    font-family:'Segoe UI',Arial,sans-serif;font-size:.72rem;color:var(--cinza);
-  }
-  .mais{
-    font-size:2.4rem;color:var(--banana);font-weight:900;
-    font-family:'Segoe UI',Arial,sans-serif;
-  }
-  .arvore-seta{
-    font-size:2rem;color:var(--verde-claro);margin:14px 0;
-  }
-  .arvore-filho{
-    display:inline-block;background:rgba(244,196,48,.18);
-    border:3px solid var(--banana);border-radius:24px;
-    padding:20px 34px;
-  }
-  .arvore-filho svg{width:130px;height:auto}
+        .bottomimg {
+            max-width: 80%;
+            margin: 2rem auto;
+        }
 
-  /* LINHA DO TEMPO */
-  .timeline{
-    position:relative;max-width:720px;margin:0 auto;
-    padding-left:36px;
-  }
-  .timeline::before{
-    content:"";position:absolute;left:9px;top:10px;bottom:10px;
-    width:3px;background:linear-gradient(180deg,var(--banana),var(--verde-claro));
-    border-radius:3px;
-  }
-  .tl-item{
-    position:relative;margin-bottom:36px;
-  }
-  .tl-item::before{
-    content:"";position:absolute;left:-33px;top:8px;
-    width:15px;height:15px;border-radius:50%;
-    background:var(--banana);border:3px solid var(--areia);
-    box-shadow:0 0 0 3px var(--banana);
-  }
-  .fundo-branco .tl-item::before{border-color:var(--branco)}
-  .tl-item .ano{
-    font-family:'Segoe UI',Arial,sans-serif;font-size:.75rem;
-    font-weight:800;letter-spacing:2px;text-transform:uppercase;
-    color:var(--banana);display:block;margin-bottom:4px;
-  }
-  .tl-item h4{
-    font-size:1.15rem;color:var(--verde-mata);margin-bottom:6px;
-  }
-  .fundo-verde .tl-item h4{color:var(--banana-claro)}
-  .tl-item p{
-    font-size:.98rem;color:var(--cinza);margin:0;
-  }
-  .fundo-verde .tl-item p{color:#B9CFC0}
-  .fundo-verde .timeline::before{background:linear-gradient(180deg,var(--banana-claro),#4E8A5E)}
+        #squeeze {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+            display: none;
+            z-index: 100;
+        }
 
-  /* MORAL */
-  .moral{
-    background:var(--banana);
-    border-radius:24px;padding:44px 34px;text-align:center;
-    box-shadow:0 14px 40px rgba(244,196,48,.35);
-  }
-  .moral .emoji{font-size:3rem;display:block;margin-bottom:16px}
-  .moral h3{
-    font-size:1.7rem;color:#2E5D3A;margin-bottom:16px;font-weight:900;
-  }
-  .moral p{
-    font-size:1.1rem;color:#3B4A2E;max-width:620px;
-    margin:0 auto 14px;
-  }
-  .moral .assinatura{
-    font-family:'Segoe UI',Arial,sans-serif;font-size:.82rem;
-    color:#5A6B44;margin-top:24px;font-weight:700;
-    letter-spacing:1px;text-transform:uppercase;
-  }
 
-  /* FICHA DOS PERSONAGENS */
-  .fichas{
-    display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:24px;
-  }
-  .ficha{
-    background:#fff;border-radius:20px;padding:30px;
-    box-shadow:var(--sombra);border-top:5px solid var(--verde-claro);
-  }
-  .ficha.rosa{border-top-color:var(--rosa)}
-  .ficha.amarela{border-top-color:var(--banana)}
-  .ficha h4{
-    font-size:1.25rem;color:var(--verde-mata);margin-bottom:4px;
-  }
-  .ficha .apelido{
-    font-family:'Segoe UI',Arial,sans-serif;font-size:.8rem;
-    color:var(--cinza);margin-bottom:16px;font-style:italic;
-  }
-  .ficha ul{list-style:none;font-size:.94rem}
-  .ficha ul li{
-    padding:8px 0;border-bottom:1px dashed var(--areia-escura);
-    color:#4A443E;
-  }
-  .ficha ul li:last-child{border-bottom:none}
-  .ficha ul li strong{
-    color:var(--verde-mata);font-family:'Segoe UI',Arial,sans-serif;
-    font-size:.82rem;text-transform:uppercase;letter-spacing:.5px;
-  }
 
-  /* CTA */
-  .cta{
-    background:var(--verde-mata);color:#fff;text-align:center;
-    padding:70px 24px;
-  }
-  .cta h2{
-    font-size:2.1rem;color:var(--banana-claro);margin-bottom:14px;
-  }
-  .cta p{
-    color:#CFE0D4;max-width:600px;margin:0 auto 30px;font-size:1.05rem;
-  }
-  .cta .btn{
-    display:inline-block;background:var(--banana);color:#2E5D3A;
-    padding:16px 44px;border-radius:50px;font-weight:900;
-    text-decoration:none;font-size:1rem;
-    font-family:'Segoe UI',Arial,sans-serif;
-    box-shadow:0 10px 30px rgba(244,196,48,.4);
-    transition:transform .2s;
-  }
-  .cta .btn:hover{transform:translateY(-3px) scale(1.03)}
+        .overlay {
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            background: rgba(0, 0, 0, 0.5);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+            z-index: 99;
+        }
 
-  /* FOOTER */
-  footer{
-    background:#1F3D27;color:#9DB8A5;padding:50px 24px 30px;
-    font-family:'Segoe UI',Arial,sans-serif;font-size:.88rem;
-  }
-  .footer-container{max-width:820px;margin:0 auto;text-align:center}
-  .footer-container .logo-footer{
-    font-size:1.1rem;font-weight:900;color:var(--banana);
-    margin-bottom:16px;letter-spacing:.5px;
-  }
-  .footer-container p{margin-bottom:12px;line-height:1.7}
-  .footer-aviso{
-    border:1px dashed rgba(244,196,48,.45);border-radius:12px;
-    padding:16px 20px;margin-top:22px;color:var(--banana-claro);
-    font-size:.82rem;
-  }
-  .footer-bottom{
-    max-width:820px;margin:28px auto 0;border-top:1px solid #2E5D3A;
-    padding-top:20px;display:flex;justify-content:space-between;
-    flex-wrap:wrap;gap:10px;font-size:.76rem;color:#7A9683;
-  }
 
-  @media(max-width:760px){
-    .hero h1{font-size:2rem}
-    .capitulo h2{font-size:1.6rem}
-    nav ul{display:none}
-    .retrato-box{width:140px}
-    .retrato-box.destaque{transform:scale(1.04)}
-    .moral h3{font-size:1.3rem}
-    .cta h2{font-size:1.5rem}
-  }
-</style>
-</head>
-<body>
 
-<!-- FAIXA DEMO -->
-<div class="demo-banner">
-  <span>DEMO</span> Página fictícia para teste de cloaker. Conto inventado — nada aqui é real e nenhum dado é coletado.
-</div>
+        #loading-indicator::after,
+        #loading-indicator::before {
+            box-sizing: border-box;
+            left: 50%;
+            position: absolute;
+            top: 50%
+        }
 
-<!-- HEADER -->
-<header>
-  <div class="header-container">
-    <a href="#" class="logo">
-      <svg viewBox="0 0 200 200" aria-hidden="true">
-        <ellipse cx="100" cy="105" rx="62" ry="66" fill="#5D4037"/>
-        <circle cx="42" cy="100" r="22" fill="#8D6E63"/>
-        <circle cx="158" cy="100" r="22" fill="#8D6E63"/>
-        <path d="M65 50 Q80 30 100 44 Q120 30 135 50" fill="#5D4037"/>
-        <ellipse cx="100" cy="126" rx="42" ry="34" fill="#C68642"/>
-        <circle cx="80" cy="96" r="8" fill="#2B1B12"/>
-        <circle cx="120" cy="96" r="8" fill="#2B1B12"/>
-        <path d="M84 138 Q100 152 116 138" stroke="#2B1B12" stroke-width="5" fill="none" stroke-linecap="round"/>
-      </svg>
-      Contos do Marceloxz
-    </a>
+        #loading-indicator {
+            background-color: rgba(0, 0, 0, .5);
+            bottom: 0;
+            box-sizing: border-box;
+            font-size: 1px;
+            height: 100%;
+            left: 0;
+            margin: 0 !important;
+            padding: 0 !important;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 100%;
+            z-index: 2147483646
+        }
+
+        #loading-indicator::before {
+            background: url(images/loading.gif) center center no-repeat rgba(0, 0, 0, 0);
+            content: "";
+            height: 70px;
+            margin-left: -35px;
+            margin-top: -70px;
+            width: 70px;
+            z-index: 2
+        }
+
+        #loading-indicator::after {
+            background: #fff;
+            border-radius: 5px;
+            color: #000;
+            content: "Submission Processing... ";
+            font-family: arial;
+            font-size: 17px;
+            height: 110px;
+            line-height: 98px;
+            margin-left: -150px;
+            margin-top: -75px;
+            padding-top: 35px;
+            text-align: center;
+            width: 300px;
+            z-index: 1
+        }
+
+        .form {
+            margin: auto;
+            text-align: center;
+        }
+
+        .gmsubmit {
+            padding: 0.25rem 0.5rem;
+            margin: 0.5rem auto;
+            font-size: 1.25rem;
+            background-image: linear-gradient(to top, #c3a748 3%, #fcdd68);
+            border: solid 1px #0f1d4c;
+            width: 80%;
+        }
+
+        .gmsubmit:hover {
+            background-image: linear-gradient(to top, #ffe799 3%, #ffe799);
+            cursor: pointer;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        input {
+            padding: 0.25rem 0.5rem;
+            margin: 0.5rem auto;
+            font-size: 1.25rem;
+            width: 80%;
+        }
+
+        #optIn {
+            padding: 10px;
+        }
+
+        #optIn h1 {
+            font-size: 1.7em;
+            color: #FFF !important;
+        }
+
+        #optIn p {
+            color: #FFF !important;
+        }
+
+        #squeezeOptInFooter p {
+            color: #FFF;
+        }
+
+        .hasError {
+            border: 1px red solid;
+        }
+
+        #errorMsg li {
+            color: #FFF;
+            list-style: none;
+            font-weight: bold;
+        }
+
+        nav {
+            max-width: 100%;
+            width: 100%;
+            padding-left: 10vw;
+            padding-right: 10vw;
+            padding-bottom: 12px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .phone img {
+                display: none;
+            }
+
+            nav {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        .penisHide {
+            display: none;
+        }
+
+        @media only screen and (max-width: 425px) {
+            .secure {
+                width: 100px;
+            }
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .bigger h1 {
+            max-width: 100%;
+            width: 100%
+        }
+
+        .mb15 {
+            margin-bottom: 30px;
+        }
+
+        .sixty p {
+            margin-bottom: 15px;
+        }
+
+        #squeeze {
+            display: none;
+        }
+
+        .exitPopButton {
+            position: absolute;
+            right: 1em;
+            top: 10px;
+            font-size: 1.5em;
+            color: #FFF;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 768px) {
+            h1 {
+                font-size: 1.15rem !important;
+                line-height: 1.25rem;
+            }
+
+            .starImg {
+                max-width: 80px;
+            }
+        }
+
+        .box .center :nth-child(2) {
+            margin: 6px;
+        }
+    </style>
+
+    <script type="text/javascript" src="js/everflow.js"></script>
+    <script type="text/javascript" src="js/everflow.js"></script>
+	<script type="text/javascript">
+	
+	EF.click({ offer_id:EF.urlParameter('oid'),
+			affiliate_id:EF.urlParameter('affid'),
+			sub1:EF.urlParameter('sub1'),
+			sub2:EF.urlParameter('sub2'),
+			sub3:EF.urlParameter('sub3'),
+			sub4:EF.urlParameter('sub4'),
+			sub5:EF.urlParameter('sub5'),
+			source_id:'-TEST',
+			uid:371,
+			transaction_id:EF.urlParameter('_ef_transaction_id'),
+			
+	}).then((transactionId) => {
+
+
+		var xmlhttp = new XMLHttpRequest(); 
+		
+		if(transactionId.length > 0){
+
+		var c1 = document.getElementById('c1');
+		if(c1){
+			c1.value = transactionId;
+		}
+		
+		var els = document.getElementsByClassName('next_link');
+		
+		Array.prototype.forEach.call(els, function(el) {
+			// Do stuff here
+			var theLink = el.href;
+			if(theLink.indexOf('c1=') == -1){
+				if(theLink.indexOf('?') == -1){
+					theLink+='?c1='+transactionId;
+					el.href=theLink;
+				}else{
+					theLink+='&c1='+transactionId;
+					el.href=theLink;
+				}
+			}
+
+			
+			if(theLink.indexOf('affid=') == -1){
+				if(theLink.indexOf('?') == -1){
+					theLink+='?affid='+2352;
+					el.href=theLink;
+				}else{
+					theLink+='&affid='+2352;
+					el.href=theLink;
+				}
+			};
+
+		});
+	}
+	
+		xmlhttp.onreadystatechange = function() {
+			if (xmlhttp.readyState == XMLHttpRequest.DONE) { // XMLHttpRequest.DONE == 4
+			   if (xmlhttp.status == 200) {
+				   console.log(xmlhttp.responseText);
+			   }
+			}
+		};
+	
+		xmlhttp.open('GET', '/includes/everflow.php?transactionId='+transactionId, true);
+		xmlhttp.send();
+
+	});
+</script>    <style>
+        #reviewSection {
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            width: 90%;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            row-gap: 1rem;
+            column-gap: 1rem;
+            justify-content: flex-start;
+            flex-shrink: 1;
+
+        }
+
+
+
+        .card {
+
+            background: #FFF;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            padding: 2em;
+            margin-bottom: 1em;
+            transition: transform .2s;
+            cursor: pointer;
+
+        }
+
+        .card:hover {
+            transform: scale(1.04);
+        }
+
+        .card-content {
+
+            margin: auto;
+            color: #000;
+
+        }
+
+        .reviewHeadline {
+            margin-bottom: 1em;
+            text-align: center;
+            font-size: 1em;
+            color: var(--color-blue);
+
+        }
+
+        .col {
+
+            flex: 32%;
+
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            .col {
+
+                flex: 100%;
+
+            }
+        }
+
+
+        .reviewContent {
+            color: #000;
+        }
+
+        .reviewAuthor {
+            font-size: 0.8em;
+            text-align: center;
+            margin-top: 0.5em;
+            font-weight: bold;
+            color: var(--color-red);
+
+
+        }
+
+        .action {
+            font-weight: bold;
+            margin-top: 1em;
+            margin-bottom: 0;
+
+        }
+
+        .action p {
+            color: var(--color-red);
+
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        footer {
+            margin-top: 0;
+        }
+
+        .reviewHeader {
+            margin-top: 2em;
+        }
+
+        div.card :not(data-page=1) {
+            display: hidden !important;
+        }
+
+        footer {
+            bottom: 0;
+            position: fixed;
+            width: 100%;
+        }
+
+        .timer {
+            font-weight: bold;
+            margin-top: 1em;
+            margin-bottom: 2rem;
+            font-weight: bold;
+            text-align: center;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            font-size: 1rem;
+        }
+
+
+        .timer-span {
+            width: 45px;
+            display: inline-block;
+            text-align: justify;
+        }
+
+
+
+
+
+        .timeP {
+            margin-bottom: 10px;
+        }
+
+        .warning.abs {
+            position: fixed;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -60%);
+            z-index: 9999999999999999;
+            display: block;
+        }
+
+        .warning {
+            background-color: #FFF;
+            max-width: 350px;
+            border: 2px solid var(--color-red);
+            font-size: 0.8em;
+
+        }
+
+        .warning-header {
+            background-color: var(--color-red);
+            color: #FFF;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .warning-body {
+            color: #000;
+            width: 80%;
+            margin: auto;
+            padding: 1em;
+            min-width: 320px;
+
+        }
+
+        .warning ul li {
+            font-weight: bold;
+        }
+
+        .warning ul {
+            padding-left: 1em;
+            margin-top: 1em;
+        }
+
+        .red {
+            color: var(--color-red);
+        }
+
+        .warningBtn {
+            margin: auto;
+
+            width: 20rem;
+            height: 3rem;
+            border-radius: 2rem;
+            font-size: 1rem;
+            background-color: var(--color-blue);
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            color: var(--color-white);
+            font-weight: 700;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+            text-decoration: none;
+            flex-direction: column;
+            cursor: pointer;
+            max-width: 300px;
+
+        }
+
+        .warningBtn:hover {
+            background-color: var(--color-red);
+            border-color: var(--color-blue);
+        }
+
+        .warning-close {
+            text-align: center;
+            margin-bottom: 1em;
+            ;
+        }
+
+        .player {
+            position: relative;
+        }
+
+
+
+        .text-center {
+            text-align: center;
+        }
+
+
+        @media only screen and (min-width: 769px) {
+
+            .abs.warning {
+                display: none;
+            }
+
+            .overlay {
+                display: none;
+            }
+
+        }
+
+
+        .imgspc img {
+            margin: 0 !important;
+            margin-bottom: 6px !important;
+
+        }
+
+        .grouping {
+            padding-bottom: 2em;
+        }
+
+        .logo {
+            text-align: center;
+        }
+
+                @media screen and (min-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media screen and (min-width: 500px ) and (max-width: 767px) {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            h1 {
+                font-size: 0.8rem !important;
+                line-height: 1.25rem;
+            }
+        }
+
+            </style>
+    <meta http-equiv="Delegate-CH" content="sec-ch-ua https://ads.trafficjunky.net; sec-ch-ua-arch https://ads.trafficjunky.net; sec-ch-ua-full-version-list https://ads.trafficjunky.net; sec-ch-ua-mobile https://ads.trafficjunky.net; sec-ch-ua-model https://ads.trafficjunky.net; sec-ch-ua-platform https://ads.trafficjunky.net; sec-ch-ua-platform-version https://ads.trafficjunky.net;">
+
+    <!-- START ExoClick Goal Tag | GM_View -->
+    <script type="application/javascript" src="js/tag_gen.js" data-goal="5d6d0cae2ebed7f09d27cb0482f6875d"></script>
+    <!-- END ExoClick Goal Tag | GM_View -->
+<script type="text/javascript" async="" src="js/loader.min.js"></script></head>
+
+<body class="light">
+    <img src="//tsyndicate.com/api/v1/retargeting/set/8da2a02c-2787-40a3-aec3-4cc99d536331" height="1" width="1">
+    <img width="1" height="1" src="https://s.magsrv.com/tag.php?goal=b94abde0bbde0f226ea7e0e546dcd0b0">
+    <img width="1" height="1" src="https://s.opoxv.com/tag.php?goal=b94abde0bbde0f226ea7e0e546dcd0b0">
+    <img width="1" height="1" src="https://s.pemsrv.com/tag.php?goal=b94abde0bbde0f226ea7e0e546dcd0b0">
+    <img width="1" height="1" src="https://s.orbsrv.com/tag.php?goal=b94abde0bbde0f226ea7e0e546dcd0b0">
+    <img width="1" height="1" src="https://syndication.realsrv.com/tag.php?goal=b94abde0bbde0f226ea7e0e546dcd0b0">
+    <img width="1" height="1" src="https://s.zlink3.com/tag.php?goal=b94abde0bbde0f226ea7e0e546dcd0b0">
+    <img src="https://ads.trafficjunky.net/rt?action=list&amp;type=add&amp;id=10&amp;context=GM&amp;cookiename=GMland&amp;maxcookiecount=10">
+        <input type="hidden" id="c1">
+    <div class="warning abs">
+        <div class="warning-header">
+            <h3>Warning! You Must Be 18 or Older</h3>
+        </div>
+        <div class="warning-body">
+            <p><b class="red">This page contains content that is not suitable for those under the age of 18 years old</b> as it contains the following restrictive content:</p>
+            <p>
+            </p><ul>
+                <li>Information on Growing Your Penis</li>
+                <li>Sex Tips Deemed not Appropriate for Minors</li>
+                <li>Vaginal Penetration</li>
+                <li>Acts of Oral Sex</li>
+                <li>Other Sexual Acts</li>
+            </ul>
+            <p></p>
+            <a href="#" class="warningBtn">I am 18 Years or Older</a>
+            <p class="warning-close"><a class="warning-close-link" href="#">Take me to the content</a></p>
+                            <p class="text-center"><b>🔊 Make Sure Your Sound is On!</b></p>
+                    </div>
+    </div>
+                <div class="overlay"></div>
+
+
     <nav>
-      <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#cap1">A História</a></li>
-        <li><a href="#arvore">Família</a></li>
-        <li><a href="#moral">Moral</a></li>
-      </ul>
+        <div class="logo">
+            <p>THE GROWTH</p>
+            <h4>CODE</h4>
+        </div>
+        <img src="images/drkseals-min.png" class="secure" alt="secure">
+        <div class="phone">
+            <img src="images/phone.png" alt="Support Number"> 1-877-207-1492
+        </div>
     </nav>
-    <a href="#inicio" class="btn-header">Ler o conto</a>
-  </div>
-</header>
 
-<!-- HERO -->
-<section class="hero" id="inicio">
-  <div class="hero-selo">✦ Conto Ilustrado ✦</div>
-  <h1>A Incrível História de <em>Marceloxz</em>, <em>Raquel</em> e o pequeno <em>João Pedro</em></h1>
-  <p class="subtitulo">
-    Uma fábula moderna sobre amor, diferenças e o poder de um abraço — contada em três atos,
-    do jeitinho que merece ser contada.
-  </p>
+            <h1>
+            <span class="red">The 15-Second 'Growth Ritual'</span><br>Porn Stars Don't Want You to Know<br><span class="font-normal">(Regular Guys Adding 3+ Inches in 30 Days)</span>        </h1>
 
-  <div class="hero-aviso">
-    <strong>Aviso:</strong> este conto é <strong>100% fictício e inventado</strong> para esta demonstração.
-    Marceloxz, Raquel e João Pedro são personagens de faz de conta, criados apenas para dar vida a esta página.
-    Nenhum animal real foi envolvido, e nada aqui deve ser levado a sério. 😄
-  </div>
+        <div class="reviews center">
+            <img class="starImg" src="images/stars.svg" alt="4.8/5 based on 358 reviews">
+            <p class="mt-0"><span>4.8/5</span> based on <span>358</span> reviews</p>
+        </div>
+        <div class="grouping">
+        <div class="player">
+            <div id="vidalytics_embed_yCt_fhBWXDoUNRjG" style="width: 100%; position: relative; padding-top: 56.25%"></div>
+            <script type="text/javascript">
+                (function(v, i, d, a, l, y, t, c, s) {
+                    y = "_" + d.toLowerCase();
+                    c = d + "L";
+                    if (!v[d]) {
+                        v[d] = {};
+                    }
+                    if (!v[c]) {
+                        v[c] = {};
+                    }
+                    if (!v[y]) {
+                        v[y] = {};
+                    }
+                    var vl = "Loader",
+                        vli = v[y][vl],
+                        vsl = v[c][vl + "Script"],
+                        vlf = v[c][vl + "Loaded"],
+                        ve = "Embed";
+                    if (!vsl) {
+                        vsl = function(u, cb) {
+                            if (t) {
+                                cb();
+                                return;
+                            }
+                            s = i.createElement("script");
+                            s.type = "text/javascript";
+                            s.async = 1;
+                            s.src = u;
+                            if (s.readyState) {
+                                s.onreadystatechange = function() {
+                                    if (
+                                        s.readyState === "loaded" ||
+                                        s.readyState == "complete"
+                                    ) {
+                                        s.onreadystatechange = null;
+                                        vlf = 1;
+                                        cb();
+                                    }
+                                };
+                            } else {
+                                s.onload = function() {
+                                    vlf = 1;
+                                    cb();
+                                };
+                            }
+                            i.getElementsByTagName("head")[0].appendChild(s);
+                        };
+                    }
+                    vsl(l + "loader.min.js", function() {
+                        if (!vli) {
+                            var vlc = v[c][vl];
+                            vli = new vlc();
+                        }
+                        vli.loadScript(l + "player.min.js", function() {
+                            var vec = v[d][ve];
+                            t = new vec();
+                            t.run(a);
+                        });
+                    });
+                })(
+                    window,
+                    document,
+                    "Vidalytics",
+                    "vidalytics_embed_yCt_fhBWXDoUNRjG",
+                    "https://quick.vidalytics.com/embeds/tN1jsNZ8/yCt_fhBWXDoUNRjG/"
+                );
+            </script>
 
-  <div class="trio">
-    <!-- MARCELOXZ -->
-    <div class="retrato-box">
-      <svg viewBox="0 0 200 200" class="retrato" aria-label="Ilustração de Marceloxz">
-        <circle cx="34" cy="96" r="26" fill="#8D5524"/>
-        <circle cx="166" cy="96" r="26" fill="#8D5524"/>
-        <circle cx="34" cy="96" r="14" fill="#C68642"/>
-        <circle cx="166" cy="96" r="14" fill="#C68642"/>
-        <ellipse cx="100" cy="100" rx="68" ry="72" fill="#6B4226"/>
-        <path d="M58 46 Q70 20 86 42 Q100 12 114 42 Q130 20 142 46" fill="#6B4226"/>
-        <ellipse cx="100" cy="126" rx="46" ry="38" fill="#C68642"/>
-        <circle cx="78" cy="90" r="9" fill="#2B1B12"/>
-        <circle cx="122" cy="90" r="9" fill="#2B1B12"/>
-        <circle cx="81" cy="87" r="3" fill="#fff"/>
-        <circle cx="125" cy="87" r="3" fill="#fff"/>
-        <path d="M66 74 Q78 68 90 74" stroke="#2B1B12" stroke-width="5" fill="none" stroke-linecap="round"/>
-        <path d="M110 74 Q122 68 134 74" stroke="#2B1B12" stroke-width="5" fill="none" stroke-linecap="round"/>
-        <ellipse cx="94" cy="118" rx="5" ry="4" fill="#2B1B12"/>
-        <ellipse cx="106" cy="118" rx="5" ry="4" fill="#2B1B12"/>
-        <path d="M80 136 Q100 152 120 136" stroke="#2B1B12" stroke-width="5" fill="none" stroke-linecap="round"/>
-      </svg>
-      <div class="nome">Marceloxz</div>
-      <div class="papel">O chimpanzé sonhador</div>
-    </div>
-
-    <!-- RAQUEL -->
-    <div class="retrato-box destaque">
-      <svg viewBox="0 0 200 200" class="retrato" aria-label="Ilustração de Raquel">
-        <ellipse cx="100" cy="100" rx="72" ry="76" fill="#3B2A20"/>
-        <path d="M55 42 Q75 18 100 34 Q125 18 145 42" fill="#3B2A20"/>
-        <path d="M40 82 Q100 56 160 82" fill="#4A362A"/>
-        <circle cx="78" cy="94" r="8" fill="#1A1210"/>
-        <circle cx="122" cy="94" r="8" fill="#1A1210"/>
-        <circle cx="81" cy="91" r="2.5" fill="#fff"/>
-        <circle cx="125" cy="91" r="2.5" fill="#fff"/>
-        <path d="M62 77 Q100 69 138 77" stroke="#1A1210" stroke-width="8" fill="none" stroke-linecap="round"/>
-        <ellipse cx="100" cy="132" rx="44" ry="34" fill="#5C4436"/>
-        <ellipse cx="90" cy="126" rx="6" ry="8" fill="#1A1210"/>
-        <ellipse cx="110" cy="126" rx="6" ry="8" fill="#1A1210"/>
-        <path d="M80 144 Q100 160 120 144" stroke="#1A1210" stroke-width="5" fill="none" stroke-linecap="round"/>
-        <path d="M152 54 l-16 -10 v20 z" fill="#E91E63"/>
-        <path d="M152 54 l16 -10 v20 z" fill="#E91E63"/>
-        <circle cx="152" cy="54" r="6" fill="#F06292"/>
-      </svg>
-      <div class="nome">Raquel</div>
-      <div class="papel">A gorila de coração enorme</div>
-    </div>
-
-    <!-- JOÃO PEDRO -->
-    <div class="retrato-box">
-      <svg viewBox="0 0 200 200" class="retrato" aria-label="Ilustração de João Pedro">
-        <circle cx="42" cy="102" r="20" fill="#8D6E63"/>
-        <circle cx="158" cy="102" r="20" fill="#8D6E63"/>
-        <ellipse cx="100" cy="102" rx="62" ry="64" fill="#5D4037"/>
-        <path d="M65 50 Q80 28 100 42 Q120 28 135 50" fill="#5D4037"/>
-        <path d="M48 84 Q100 64 152 84" fill="#6D4C41"/>
-        <ellipse cx="100" cy="124" rx="42" ry="34" fill="#A1887F"/>
-        <circle cx="80" cy="96" r="8" fill="#2B1B12"/>
-        <circle cx="120" cy="96" r="8" fill="#2B1B12"/>
-        <circle cx="83" cy="93" r="2.5" fill="#fff"/>
-        <circle cx="123" cy="93" r="2.5" fill="#fff"/>
-        <path d="M68 82 Q80 76 92 82" stroke="#2B1B12" stroke-width="5" fill="none" stroke-linecap="round"/>
-        <path d="M108 82 Q120 76 132 82" stroke="#2B1B12" stroke-width="5" fill="none" stroke-linecap="round"/>
-        <ellipse cx="94" cy="118" rx="4.5" ry="3.5" fill="#2B1B12"/>
-        <ellipse cx="106" cy="118" rx="4.5" ry="3.5" fill="#2B1B12"/>
-        <path d="M84 134 Q100 148 116 134" stroke="#2B1B12" stroke-width="5" fill="none" stroke-linecap="round"/>
-        <ellipse cx="100" cy="158" rx="16" ry="12" fill="#F4C430"/>
-        <ellipse cx="100" cy="162" rx="10" ry="7" fill="#E0A800"/>
-      </svg>
-      <div class="nome">João Pedro</div>
-      <div class="papel">O filhote de dois mundos</div>
-    </div>
-  </div>
-</section>
-
-<!-- CAPÍTULO 1 -->
-<section class="fundo-branco" id="cap1">
-  <div class="container capitulo">
-    <span class="capitulo-num">Primeiro Ato</span>
-    <h2>O chimpanzé que colecionava manhãs</h2>
-
-    <p class="lead">
-      Marceloxz não era um chimpanzé comum. Enquanto os outros passavam o dia pulando de galho em galho,
-      ele ficava sentado na pedra mais alta da floresta, olhando o sol nascer como quem assiste a um filme.
-    </p>
-
-    <p>
-      Ele morava numa clareira chamada <strong>Vale das Bananas Tortas</strong>, um lugar onde as frutas cresciam
-      com formatos esquisitos e ninguém se importava com isso. Marceloxz tinha um caderninho feito de folhas
-      costuradas com cipó, onde anotava tudo o que achava bonito: o barulho da chuva, o cheiro de terra molhada,
-      e a cor exata do céu às seis e doze da manhã.
-    </p>
-
-    <p>
-      Os outros chimpanzés riam dele. Diziam que pensar demais dava dor de cabeça. Marceloxz só dava de ombros,
-      guardava o caderno debaixo do braço e continuava anotando.
-    </p>
-
-    <div class="fala">
-      Um dia eu vou encontrar alguém que também acha o céu das seis e doze a coisa mais bonita do mundo.
-      <span class="quem">— Marceloxz, para ninguém em particular</span>
-    </div>
-
-    <p>
-      Ele não sabia, mas estava certo. Só não imaginava que essa alguém viria de um lugar
-      completamente diferente — e que seria <strong>duas vezes maior que ele</strong>.
-    </p>
-  </div>
-</section>
-
-<div class="divisor">· · ·</div>
-
-<!-- CAPÍTULO 2 -->
-<section id="cap2">
-  <div class="container capitulo">
-    <span class="capitulo-num">Segundo Ato</span>
-    <h2>Raquel, a gorila que não tinha pressa</h2>
-
-    <p class="lead">
-      Do outro lado da floresta, numa montanha chamada <strong>Serra do Silêncio</strong>, vivia Raquel.
-      Ela era uma gorila grande, forte e absolutamente tranquila.
-    </p>
-
-    <p>
-      Raquel tinha um jeito peculiar de resolver problemas: ela não resolvia. Ela sentava, respirava e esperava
-      o problema se cansar e ir embora sozinho. Funcionava quase sempre.
-    </p>
-
-    <p>
-      Ela também gostava de coisas simples. Gostava de amassar folhas entre os dedos para sentir a textura.
-      Gostava de observar formigas trabalhando. E gostava, acima de tudo, de <strong>silêncio</strong> —
-      aquele silêncio bom, de fim de tarde, quando o mundo parece que baixou o volume.
-    </p>
-
-    <div class="fala">
-      Barulho demais não deixa a gente ouvir o que importa.
-      <span class="quem">— Raquel, provavelmente</span>
-    </div>
-
-    <p>
-      Acontece que Raquel também estava sozinha. Não por falta de opção, mas porque ninguém tinha paciência
-      para acompanhar o ritmo dela. Todo mundo queria correr. Ela queria caminhar.
-    </p>
-  </div>
-</section>
-
-<div class="divisor">· · ·</div>
-
-<!-- CAPÍTULO 3 -->
-<section class="fundo-verde">
-  <div class="container capitulo">
-    <span class="capitulo-num">Terceiro Ato</span>
-    <h2>O encontro no rio de pedra</h2>
-
-    <p class="lead">
-      Eles se conheceram num lugar onde ninguém costumava ir: um rio que tinha parado de correr
-      e virado um caminho de pedras redondas.
-    </p>
-
-    <p>
-      Marceloxz estava lá porque queria anotar a cor das pedras molhadas. Raquel estava lá porque
-      queria ficar em silêncio num lugar novo.
-    </p>
-
-    <p>
-      Ficaram os dois parados, um de cada lado, por uns dez minutos. Nenhum dos dois sabia como começar.
-    </p>
-
-    <div class="fala">
-      Você também veio ver as pedras?
-      <span class="quem">— Marceloxz, com a voz um pouco mais fina que o normal</span>
-    </div>
-
-    <div class="fala">
-      Vim ver o silêncio. Mas as pedras servem.
-      <span class="quem">— Raquel, sem tirar os olhos do horizonte</span>
-    </div>
-
-    <p>
-      Marceloxz achou aquela resposta a coisa mais interessante que já tinha ouvido. Raquel achou
-      engraçado o jeito que ele segurava o caderninho, como se fosse ouro.
-    </p>
-
-    <p>
-      Eles conversaram até o sol ficar laranja. Falaram sobre bananas tortas e sobre montanhas calmas.
-      Falaram sobre o barulho que a floresta faz de madrugada. E, quando perceberam, já estavam
-      sentados na mesma pedra, um do lado do outro.
-    </p>
-
-    <div class="cena">
-      <svg viewBox="0 0 500 260" aria-label="Marceloxz e Raquel sentados na pedra ao pôr do sol">
-        <!-- céu -->
-        <defs>
-          <linearGradient id="ceu" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#FFB74D"/>
-            <stop offset="55%" stop-color="#FF8A65"/>
-            <stop offset="100%" stop-color="#6D4C41"/>
-          </linearGradient>
-        </defs>
-        <rect x="0" y="0" width="500" height="260" fill="url(#ceu)" rx="18"/>
-        <!-- sol -->
-        <circle cx="250" cy="150" r="46" fill="#FFE082" opacity="0.9"/>
-        <!-- montanhas -->
-        <path d="M0 190 L110 120 L200 190 Z" fill="#4E342E" opacity="0.75"/>
-        <path d="M280 190 L400 110 L500 190 Z" fill="#3E2723" opacity="0.8"/>
-        <!-- chão -->
-        <rect x="0" y="188" width="500" height="72" fill="#3E2723" rx="0"/>
-        <!-- pedra -->
-        <ellipse cx="250" cy="205" rx="105" ry="26" fill="#5D4037"/>
-        <ellipse cx="250" cy="199" rx="98" ry="20" fill="#6D4C41"/>
-        <!-- Marceloxz pequeno -->
-        <g transform="translate(198,160)">
-          <ellipse cx="0" cy="20" rx="26" ry="24" fill="#6B4226"/>
-          <circle cx="-10" cy="14" r="4" fill="#2B1B12"/>
-          <circle cx="10" cy="14" r="4" fill="#2B1B12"/>
-          <ellipse cx="0" cy="28" rx="16" ry="12" fill="#C68642"/>
-          <path d="M-8 34 Q0 40 8 34" stroke="#2B1B12" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-        </g>
-        <!-- Raquel grande -->
-        <g transform="translate(310,148)">
-          <ellipse cx="0" cy="28" rx="40" ry="38" fill="#3B2A20"/>
-          <ellipse cx="0" cy="12" rx="36" ry="10" fill="#4A362A"/>
-          <circle cx="-13" cy="22" r="5" fill="#1A1210"/>
-          <circle cx="13" cy="22" r="5" fill="#1A1210"/>
-          <ellipse cx="0" cy="42" rx="24" ry="18" fill="#5C4436"/>
-          <path d="M-11 50 Q0 58 11 50" stroke="#1A1210" stroke-width="3" fill="none" stroke-linecap="round"/>
-          <path d="M30 6 l-11 -7 v14 z" fill="#E91E63"/>
-          <path d="M30 6 l11 -7 v14 z" fill="#E91E63"/>
-        </g>
-        <!-- coração -->
-        <path d="M250 105 c-8 -10 -22 -6 -22 5 c0 10 14 18 22 24 c8 -6 22 -14 22 -24 c0 -11 -14 -15 -22 -5 z" fill="#E91E63" opacity="0.9"/>
-      </svg>
-      <div class="legenda">Ilustração do conto — “o encontro no rio de pedra”.</div>
-    </div>
-  </div>
-</section>
-
-<div class="divisor">· · ·</div>
-
-<!-- CAPÍTULO 4 -->
-<section class="fundo-branco">
-  <div class="container capitulo">
-    <span class="capitulo-num">Quarto Ato</span>
-    <h2>Uma família fora dos padrões</h2>
-
-    <p class="lead">
-      O tempo passou do jeito que o tempo passa: sem pedir licença.
-    </p>
-
-    <p>
-      Marceloxz e Raquel começaram a morar juntos numa caverna arejada, no meio do caminho entre
-      o Vale das Bananas Tortas e a Serra do Silêncio. Cada um fazia do seu jeito, e era exatamente
-      isso que dava certo.
-    </p>
-
-    <p>
-      Marceloxz anotava tudo no caderninho. Raquel ficava em silêncio ao lado dele, olhando.
-      Ele falava muito. Ela falava pouco. Os dois se entendiam perfeitamente.
-    </p>
-
-    <p>
-      Foi então que a notícia chegou: <strong>Raquel estava esperando um filhote</strong>.
-    </p>
-
-    <p>
-      A floresta inteira comentou. Uns acharam estranho. Outros acharam bonito. A maioria só queria
-      saber como seria o bebê — afinal, chimpanzé com gorila não era coisa que se visse todo dia.
-    </p>
-
-    <div class="fala">
-      E se ele não parecer com nenhum de nós dois?
-      <span class="quem">— Marceloxz, preocupado, numa noite de chuva</span>
-    </div>
-
-    <div class="fala">
-      Então ele vai parecer com ele mesmo. Já é o suficiente.
-      <span class="quem">— Raquel, com a paciência de sempre</span>
-    </div>
-
-    <p>
-      Marceloxz ficou quieto por um momento. Depois pegou o caderninho e escreveu essa frase.
-      Foi a anotação mais bonita que ele já tinha feito.
-    </p>
-  </div>
-</section>
-
-<div class="divisor">· · ·</div>
-
-<!-- CAPÍTULO 5 -->
-<section id="cap5">
-  <div class="container capitulo">
-    <span class="capitulo-num">Quinto Ato</span>
-    <h2>João Pedro</h2>
-
-    <p class="lead">
-      Ele nasceu numa manhã de neblina, exatamente às seis e doze.
-    </p>
-
-    <p>
-      Marceloxz percebeu a hora e sorriu, porque era <strong>a hora do céu mais bonito</strong> —
-      aquela que ele anotava no caderno desde antes de conhecer Raquel.
-    </p>
-
-    <p>
-      João Pedro veio ao mundo com o rosto largo da mãe, o topete bagunçado do pai e um olhar
-      curioso que parecia já querer entender tudo. Pesava mais que o normal. Chorava menos que o esperado.
-      E, nos primeiros dias, dormia abraçado a um cacho de banana que Marceloxz tinha colocado
-      do lado dele “só por garantia”.
-    </p>
-
-    <div class="cena">
-      <svg viewBox="0 0 420 300" aria-label="João Pedro bebê no colo dos pais">
-        <rect x="0" y="0" width="420" height="300" fill="#FFF8E1" rx="18"/>
-        <!-- pais ao fundo -->
-        <g opacity="0.9">
-          <ellipse cx="110" cy="150" rx="52" ry="54" fill="#6B4226"/>
-          <circle cx="92" cy="142" r="7" fill="#2B1B12"/>
-          <circle cx="128" cy="142" r="7" fill="#2B1B12"/>
-          <ellipse cx="110" cy="176" rx="32" ry="26" fill="#C68642"/>
-          <path d="M96 186 Q110 198 124 186" stroke="#2B1B12" stroke-width="4" fill="none" stroke-linecap="round"/>
-        </g>
-        <g opacity="0.9">
-          <ellipse cx="310" cy="146" rx="60" ry="62" fill="#3B2A20"/>
-          <path d="M262 118 Q310 100 358 118" fill="#4A362A"/>
-          <circle cx="292" cy="140" r="7" fill="#1A1210"/>
-          <circle cx="328" cy="140" r="7" fill="#1A1210"/>
-          <ellipse cx="310" cy="176" rx="36" ry="28" fill="#5C4436"/>
-          <path d="M296 188 Q310 200 324 188" stroke="#1A1210" stroke-width="4" fill="none" stroke-linecap="round"/>
-          <path d="M356 100 l-13 -8 v16 z" fill="#E91E63"/>
-          <path d="M356 100 l13 -8 v16 z" fill="#E91E63"/>
-        </g>
-        <!-- bebê no centro -->
-        <g transform="translate(210,205)">
-          <ellipse cx="0" cy="0" rx="52" ry="46" fill="#5D4037"/>
-          <path d="M-38 -22 Q0 -44 38 -22" fill="#6D4C41"/>
-          <ellipse cx="0" cy="12" rx="34" ry="26" fill="#A1887F"/>
-          <circle cx="-16" cy="-6" r="7" fill="#2B1B12"/>
-          <circle cx="16" cy="-6" r="7" fill="#2B1B12"/>
-          <circle cx="-14" cy="-9" r="2.2" fill="#fff"/>
-          <circle cx="18" cy="-9" r="2.2" fill="#fff"/>
-          <ellipse cx="-6" cy="10" rx="4" ry="3" fill="#2B1B12"/>
-          <ellipse cx="6" cy="10" rx="4" ry="3" fill="#2B1B12"/>
-          <path d="M-12 22 Q0 32 12 22" stroke="#2B1B12" stroke-width="4" fill="none" stroke-linecap="round"/>
-          <ellipse cx="0" cy="44" rx="14" ry="10" fill="#F4C430"/>
-          <ellipse cx="0" cy="47" rx="9" ry="6" fill="#E0A800"/>
-        </g>
-        <!-- corações -->
-        <path d="M60 60 c-6 -8 -17 -5 -17 4 c0 8 11 14 17 19 c6 -5 17 -11 17 -19 c0 -9 -11 -12 -17 -4 z" fill="#E91E63" opacity="0.55"/>
-        <path d="M360 60 c-6 -8 -17 -5 -17 4 c0 8 11 14 17 19 c6 -5 17 -11 17 -19 c0 -9 -11 -12 -17 -4 z" fill="#E91E63" opacity="0.55"/>
-      </svg>
-      <div class="legenda">Ilustração do conto — “o primeiro abraço de João Pedro”.</div>
-    </div>
-  </div>
-</section>
-
-<div class="divisor">· · ·</div>
-
-<!-- CAPÍTULO 6 -->
-<section class="fundo-branco">
-  <div class="container capitulo">
-    <span class="capitulo-num">Sexto Ato</span>
-    <h2>Crescer entre dois mundos</h2>
-
-    <p class="lead">
-      João Pedro cresceu do jeito que criança cresce: rápido demais e sem avisar.
-    </p>
-
-    <p>
-      Ele tinha a força da mãe e a curiosidade do pai. Subia em árvores com a agilidade de um chimpanzé,
-      mas parava no meio do caminho para olhar as folhas com a calma de uma gorila. Era um menino
-      de dois mundos, e isso nunca foi um problema — só uma característica.
-    </p>
-
-    <p>
-      Na escola da floresta, alguns bichos perguntavam de que espécie ele era. João Pedro pensava
-      um pouco e respondia sempre a mesma coisa:
-    </p>
-
-    <div class="fala">
-      Eu sou do Marceloxz e da Raquel. O resto é detalhe.
-      <span class="quem">— João Pedro, aos cinco anos</span>
-    </div>
-
-    <p>
-      Marceloxz anotou essa frase no caderninho. Já era a segunda frase da família naquele mesmo caderno.
-      Ele percebeu, naquele dia, que estava construindo uma coleção diferente: não era mais de manhãs bonitas.
-      Era de <strong>coisas que valiam a pena</strong>.
-    </p>
-
-    <p>
-      Raquel, do outro lado da caverna, olhava os dois e sorria sem dizer nada.
-      Como sempre.
-    </p>
-  </div>
-</section>
-
-<div class="divisor">· · ·</div>
-
-<!-- LINHA DO TEMPO -->
-<section class="fundo-verde">
-  <div class="container-largo">
-    <div class="section-title capitulo" style="text-align:center;margin-bottom:44px">
-      <span class="capitulo-num">Resumo do conto</span>
-      <h2 style="color:#FFE082">A história em linha do tempo</h2>
-    </div>
-    <div class="timeline">
-      <div class="tl-item">
-        <span class="ano">Capítulo 1</span>
-        <h4>Marceloxz e o caderninho</h4>
-        <p>Um chimpanzé sonhador anota tudo o que acha bonito e espera encontrar alguém que entenda.</p>
-      </div>
-      <div class="tl-item">
-        <span class="ano">Capítulo 2</span>
-        <h4>Raquel e o silêncio</h4>
-        <p>Uma gorila tranquila que resolve problemas esperando eles irem embora sozinhos.</p>
-      </div>
-      <div class="tl-item">
-        <span class="ano">Capítulo 3</span>
-        <h4>O rio de pedra</h4>
-        <p>Os dois se conhecem por acaso e conversam até o sol ficar laranja.</p>
-      </div>
-      <div class="tl-item">
-        <span class="ano">Capítulo 4</span>
-        <h4>A espera</h4>
-        <p>Juntos, descobrem que estão esperando um filhote — e que isso não muda nada entre eles.</p>
-      </div>
-      <div class="tl-item">
-        <span class="ano">Capítulo 5</span>
-        <h4>João Pedro chega</h4>
-        <p>Numa manhã de neblina, às seis e doze, nasce o filhote de dois mundos.</p>
-      </div>
-      <div class="tl-item">
-        <span class="ano">Capítulo 6</span>
-        <h4>Crescer é aprender a se explicar menos</h4>
-        <p>João Pedro entende cedo que família não se define por espécie, e sim por quem fica.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ÁRVORE GENEALÓGICA -->
-<section class="fundo-branco" id="arvore">
-  <div class="container-largo">
-    <div class="arvore">
-      <h3>Árvore da Família (fictícia)</h3>
-      <p class="sub">Uma família como qualquer outra — só um pouco mais peluda.</p>
-
-      <div class="arvore-linha">
-        <!-- Marceloxz -->
-        <div class="arvore-pessoa">
-          <svg viewBox="0 0 200 200">
-            <circle cx="34" cy="96" r="24" fill="#8D5524"/>
-            <circle cx="166" cy="96" r="24" fill="#8D5524"/>
-            <ellipse cx="100" cy="100" rx="66" ry="70" fill="#6B4226"/>
-            <path d="M58 48 Q70 24 86 44 Q100 16 114 44 Q130 24 142 48" fill="#6B4226"/>
-            <ellipse cx="100" cy="126" rx="44" ry="36" fill="#C68642"/>
-            <circle cx="78" cy="92" r="8" fill="#2B1B12"/>
-            <circle cx="122" cy="92" r="8" fill="#2B1B12"/>
-            <path d="M80 136 Q100 150 120 136" stroke="#2B1B12" stroke-width="5" fill="none" stroke-linecap="round"/>
-          </svg>
-          <div class="n">Marceloxz</div>
-          <div class="e">Chimpanzé</div>
         </div>
 
-        <span class="mais">+</span>
+    </div>
 
-        <!-- Raquel -->
-        <div class="arvore-pessoa">
-          <svg viewBox="0 0 200 200">
-            <ellipse cx="100" cy="100" rx="70" ry="74" fill="#3B2A20"/>
-            <path d="M55 44 Q75 20 100 36 Q125 20 145 44" fill="#3B2A20"/>
-            <path d="M42 82 Q100 58 158 82" fill="#4A362A"/>
-            <circle cx="78" cy="94" r="8" fill="#1A1210"/>
-            <circle cx="122" cy="94" r="8" fill="#1A1210"/>
-            <ellipse cx="100" cy="132" rx="42" ry="32" fill="#5C4436"/>
-            <path d="M80 144 Q100 158 120 144" stroke="#1A1210" stroke-width="5" fill="none" stroke-linecap="round"/>
-            <path d="M152 54 l-15 -9 v18 z" fill="#E91E63"/>
-            <path d="M152 54 l15 -9 v18 z" fill="#E91E63"/>
-          </svg>
-          <div class="n">Raquel</div>
-          <div class="e">Gorila</div>
+    
+        <style>
+
+        </style>
+        <div class="timer hidden">
+            <p class="timeP"><span class="red">Limited Spots Available in <span class="timer-span red cd-timer standout">00:00</span></span></p>
+            <p>Please Do Not Leave Or You Will Lose Your Spot</p>
         </div>
-      </div>
 
-      <div class="arvore-seta">↓</div>
 
-      <div class="arvore-filho">
-        <svg viewBox="0 0 200 200">
-          <circle cx="42" cy="102" r="19" fill="#8D6E63"/>
-          <circle cx="158" cy="102" r="19" fill="#8D6E63"/>
-          <ellipse cx="100" cy="102" rx="60" ry="62" fill="#5D4037"/>
-          <path d="M66 52 Q80 30 100 44 Q120 30 134 52" fill="#5D4037"/>
-          <path d="M50 84 Q100 66 150 84" fill="#6D4C41"/>
-          <ellipse cx="100" cy="124" rx="40" ry="32" fill="#A1887F"/>
-          <circle cx="80" cy="96" r="8" fill="#2B1B12"/>
-          <circle cx="120" cy="96" r="8" fill="#2B1B12"/>
-          <path d="M84 134 Q100 148 116 134" stroke="#2B1B12" stroke-width="5" fill="none" stroke-linecap="round"/>
-        </svg>
-        <div class="n" style="color:#5D4037;font-size:1rem">João Pedro</div>
-        <div class="e">Meio gorila, meio chimpanzé, 100% ele mesmo</div>
-      </div>
+
+    
+
+    <div id="ctapop">
+        <div class="box">
+            <div class="one center">
+                <img loading="lazy" class="imgres content" src="images/tgc.png" alt="Get Growth Code">
+            </div>
+            <div class="center">
+                <p class="font-bold"><span class="red">LIMITED TIME OFFER</span></p>
+                <h1>GET 94% OFF</h1>
+                <p>
+                    For only <span class="red"><s>$149</s></span>
+                    <span class="font-bold">$7</span>
+                    <span class="red-button">Save $142!</span>
+                </p>
+                <a href="/checkout/index2.php?affid=2352" class="cta next_link">
+                    Claim Your Discount</a>
+                <p class="securepayments">
+                    Secure Payments Guaranteed
+                    <span class="imgspc"><img loading="lazy" src="images/Discover.png" alt="Discover"><img loading="lazy" src="images/Visa.png" alt="Visa"><img loading="lazy" src="images/Mastercard.png" alt="Mastercard"></span>
+                </p>
+            </div>
+        </div>
+        <div>
+            
+            <h1 id="reviewH" class="header"><span class="font-normal">Real people,</span> Real Growth</h1>
+
+            <div class="realpeople">
+                <img loading="lazy" class="imgres" src="images/joseph-min.png" alt="Joseph P">
+                <div>
+                    <img loading="lazy" src="images/stars.svg" alt="stars">
+                    <h4>Joseph P is sporting an 8-incher now…</h4>
+                    <p>
+                        “It's been just weeks and I'm packing nearly 8 inches now. I
+                        honestly didn't think having a bigger dick would make that much of
+                        difference in my life but I was WRONG. Last night I made my girl cum
+                        3 times in an hour… which is 3 times more than she came all last
+                        year”
+                    </p>
+                </div>
+            </div>
+            <div class="realpeople two">
+                <div>
+                    <img loading="lazy" src="images/stars.svg" alt="stars">
+                    <h4>The Growth Code™ program saved Edward's marriage…</h4>
+                    <p>
+                        “You literally saved my marriage. My wife and I had been married for
+                        5 years when she decided to drop the bomb on me – I was her only
+                        lover…ever…who hadn't given her an orgasm with his penis. Hearing
+                        this was tough, but your video presentation was my salvation. I
+                        followed the blueprint exactly as it was laid out and within 2
+                        months I had added a solid 1.5 inches to my penis. I'm not a monster
+                        now – but I've got MORE than enough to get the job done. The little
+                        lady couldn't be happier. She actually cried the first time she
+                        came, that's how happy she was.”
+                    </p>
+                </div>
+                <img loading="lazy" class="imgres" src="images/edward-min.png" alt="Edward">
+            </div>
+            <div class="realpeople">
+                <img loading="lazy" class="imgres" src="images/jerry-min.png" alt="Jerry">
+                <div>
+                    <img loading="lazy" src="images/stars.svg" alt="stars">
+                    <h4>
+                        Jerry thought his sex life was over until he used Growth Code™…
+                    </h4>
+                    <p>
+                        When I first saw your video on how I could grow my penis I honestly
+                        wasn't sure I could believe it. I could tell you were sincere but
+                        thought you never had it as bad as I did in the size department. I
+                        was 4 inches and couldn't even get it all the way in when trying to
+                        enter my wife from behind. At 52 I just assumed my sex life was
+                        never going to change. My wife stopped asking me to have sex back
+                        when the second Bush was still n office. Well let me tell you… I'm
+                        now packing some serious heat and my forty two year old wife
+                        couldn't be happier! She was pulling for me when she saw the
+                        presentation and was with me on the journey the entire way. We owe
+                        our entire sex life to you and the video you put online!”
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="bigger">
+                <div>
+                    <h1 class="left">
+                        Up To 3.6”<br>
+                        <span class="bigtext">BIGGER</span>
+                    </h1>
+                    <p>
+                        Growth Code™ is a revolutionary pornstar-approved growth program
+                        that guarantees to help you grow your cock and boost your stamina,
+                        making you more confident, more attractive, more powerful, and more of
+                        a man.
+                    </p>
+                </div>
+                <img loading="lazy" class="imgres penisHide" src="images/bigger-min.png" alt="bigger">
+            </div>
+        </div>
+        <div class="ryan">
+            <img loading="lazy" src="images/ryan-min.png" class="photo" alt="Ryan">
+            <div>
+                <h1 class="font-normal">What Makes <span class="font-bold red">Growth Code</span> ™ Different?</h1>
+                <p>
+                    You're not just getting a penis enlargement technique. You're getting
+                    a video program that walks you through the exact same method used by
+                    the world's most famous porn stars. If you've ever wondered how porn
+                    dudes like me get cocks so big and last so long… you're about to find
+                    out.
+                </p>
+                <div class="discount"><a href="/checkout/index2.php?affid=2352" class="cta next_link">
+                        Claim Your Discount</a>
+                    <div>
+                        <div class="reviews">
+                            <img loading="lazy" src="images/stars.svg" alt="4.8/5">
+                            <p>Rated <span>4.8/5</span></p>
+                        </div>
+                        <p class="securepayments">
+                            Secure Payments Guaranteed
+                            <span class="imgspc"><img loading="lazy" src="images/Discover.png" alt="Discover"><img loading="lazy" src="images/Visa.png" alt="Visa"><img loading="lazy" src="images/Mastercard.png" alt="Mastercard"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="greygrad">
+            <div class="gmpmp">
+                <h1 class="font-normal header">Here's <span class="font-bold">Everything</span> You Get…</h1>
+                <p class="center eighty">
+                    I've left nothing to chance. In seconds from now you'll have the
+                    complete system for rapid growth. Follow along with me in the video
+                    walkthroughs and <span class="font-bold">growth isn't just possible, it's… inevitable</span>
+                </p>
+                <div class="mbg center eighty">
+                    <img loading="lazy" class="imgres content" src="images/tgc.png" alt="Get Growth Code">
+                </div>
+                <h1 class="header"><span class="red">The Growth Code</span><span class="font-normal">™<br>Private Members Portal</span></h1>
+                <p class="eighty">
+                    If you want rapid growth of your member and a cock that ANY woman will
+                    worship, Growth Code™ is what you've been looking for. And a bigger
+                    cock is just ONE of the benefits. Your confidence surges… you'll make
+                    your girl cum multiple times a night… and women will be uncontrollably
+                    attracted to you. Your dick becomes a pussy magnet. With Growth Code™
+                    you get to escape your average-sized reality and get bigger, stronger,
+                    harder in just minutes a day.
+                </p>
+                <ul class="eighty">
+                    <li>You get the <span class="font-bold">complete Growth Code™ program</span> used by world famous porn stars…</li>
+                    <li>The <span class="font-bold">“Immediate Inches” Quick Start Guide</span> so you can see results FAST…</li>
+                    <li>The <span class="font-bold">Growth Code™ Platinum Video Series…</span></li>
+                    <li><span class="font-bold">Total Growth Code™ Mastery</span> reveals the science behind the program…</li>
+                    <li><span class="font-bold">6 And A Half Minutes To A Monster Cock</span> gives your cock the ultimate workout…</li>
+                    <li><span class="font-bold">The Porn Star Playbook</span> reveals growth hacks shared behind the scenes to ensure maximum
+                        length, girth and performance…</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bonus">
+            <img loading="lazy" src="images/tdp.png" alt="THE DOMINANCE PROTOCOL">
+            <div>
+                <span class="red-button">BONUS #1</span>
+                <h4 class="red lrgmargin">THE DOMINANCE PROTOCOL</h4>
+                <ul>
+                    <li>
+                        <b>The hush-hush “psychological dominance” technique we use
+                            before adult film shoots…</b>
+                    </li>
+                    <li>
+                        How to trigger instant arousal in ANY woman using just your
+                        body language…
+                    </li>
+                    <li>
+                        <b>Why alpha male presence has nothing to do with size (but
+                            everything to do with this weird confidence trick)</b>
+                    </li>
+                    <li>
+                        The exact phrases that make women physically ache for you…
+                    </li>
+                    <li>
+                        <b>Plus the controversial “submission trigger”</b>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bonus">
+            <img loading="lazy" src="images/tss.png" alt="THE STAMINA SOLUTION">
+            <div>
+                <span class="red-button">BONUS #2</span>
+                <h4 class="red lrgmargin">THE STAMINA SOLUTION</h4>
+                <ul>
+                    <li>
+                        <b>The breathing pattern that gives you total control over
+                            your climax…</b>
+                    </li>
+                    <li>
+                        How to last 30… 45… even 60 minutes without even thinking
+                        about baseball…
+                    </li>
+                    <li>
+                        <b>The "edge protocol" we use to film marathon scenes…</b>
+                    </li>
+                    <li>
+                        Why everything you've been told about lasting longer is dead
+                        wrong
+                    </li>
+                    <li>
+                        <b>Plus the simple supplement stack that enhances your staying
+                            power naturally…</b>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bonus">
+            <img loading="lazy" src="images/pm.png" alt="THE PLEASURE MATRIX">
+            <div>
+                <span class="red-button">BONUS #3</span>
+                <h4 class="red lrgmargin">THE PLEASURE MATRIX</h4>
+                <ul>
+                    <li>
+                        <b>The “deep spot” technique that gives women full-body
+                            orgasms…</b>
+                    </li>
+                    <li>
+                        How to hit her secret pleasure zones she didn't even know
+                        existed…
+                    </li>
+                    <li>
+                        <b>The controversial “O trigger” that makes her climax on
+                            command…</b>
+                    </li>
+                    <li>
+                        Why 99% of guys completely miss the most sensitive area (and
+                        exactly how to find it)
+                    </li>
+                    <li>
+                        <b>Plus the position modifications that hit all her hot spots
+                            simultaneously…</b>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="center">
+            <p>LIMITED TIME OFFER</p>
+            <h1>GET 94% OFF</h1>
+            <p>
+                For only <span class="red"><s>$149</s></span>
+                <span class="font-bold">$7</span>
+                <span class="red-button">Save $142!</span>
+            </p>
+            <a href="/checkout/index2.php?affid=2352" class="cta next_link">
+                Claim Your Discount</a>
+            <p class="securepayments mb15">
+                Secure Payments Guaranteed
+                <span class="imgspc"><img loading="lazy" src="images/Discover.png" alt="Discover"><img loading="lazy" src="images/Visa.png" alt="Visa"><img loading="lazy" src="images/Mastercard.png" alt="Mastercard"></span>
+            </p>
+        </div>
+        <div class="dark">
+            <div class="inner">
+                <img loading="lazy" class="moneyback" src="images/moneyback-min.png" alt="Money Back">
+                <h1>Get The Cock Of A Porn Star… <span class="orange">Or You Pay Nothing!</span></h1>
+                <p class="twenty">
+                    You have a <span class="font-bold">full 365 days</span> to give <span class="font-bold">Growth Code™</span> your personal seal of
+                    approval, or I insist you write to me for a prompt no questions asked
+                    refund of every last penny.
+                </p>
+                <p>
+                    That's right, I'm giving you an <span class="font-bold">ENTIRE YEAR</span> to get the growth results
+                    you know you deserve. This way, the pressure is on ME to over deliver.</p>
+                <p>You have zero pressure, there's no rush, however, you get to<br><span class="font-bold">try Growth
+                        Matrix™ 100% RISK FREE.</span>
+                </p>
+            </div>
+        </div>
+        <div>
+            <h1 class="header"><span class="font-normal">Michael's sex life </span>has been transformed!</h1>
+            <div class="realpeople">
+                <img loading="lazy" class="imgres" src="images/michael-min.png" alt="Michael">
+                <div>
+                    <img loading="lazy" src="images/stars.svg" alt="stars">
+                    <p>
+                        “It's been 5 months since my wife and I found out about Growth Code™
+                        and I just want to say – you literally saved my marriage. I cannot
+                        believe how these silly little penis exercises have totally changed my
+                        sex life. My wife had been together for 11 years and while the emotional
+                        bond was there – the passion was not. The only way we could have sex was
+                        missionary because when she tried to ride me it would slip out and when
+                        I tried to enter her from behind I just couldn't get it in deep enough.
+                        I'd experimented with things like dirty talk to increase her arousal but
+                        I had to stop because it was just depressing me. Asking her if she
+                        “liked that big cock” was too embarrassing because I knew my five incher
+                        didn't stack up to any of the guys she'd had before me. Well, fast
+                        forward to today and we'vegot a whole new marriage. I'm now over 7
+                        inches and she's over the moon. We have sex every few nights instead of
+                        every few months and SHE is the one who asks for it. I honestly have
+                        never had this much sex in my entire life. THANK YOU!”
+                    </p>
+                </div>
+            </div>
+            <div class="sixty">
+                <h1 class="header"><span class="font-normal">Still Have Questions?</span><br>I've Got You Covered</h1>
+                <p><span class="font-bold">I'm over 60 years old. Can The Growth Code™ work for me?</span><br>
+                    Yes, if you've got a dick it doesn't matter how old that dick is. If you're otherwise healthy, The Growth Code™ will work for you in the same way it does for an 18-year-old.</p>
+                <p><span class="font-bold">Do I have to buy anything else?</span><br>
+                    Nope, all you need are your two hands and a couple of things from around your house. You can get started minutes from now. So hit the button below and let's get you growing.</p>
+                <p><span class="font-bold">How long before I see results?</span><br>
+                    You'll notice harder erections almost immediately. Then over the coming weeks you and the women in your life will begin to take notice of your size increases in a big way. She'll be begging for more… if she can fit it in.</p>
+                <p><span class="font-bold">Can I really get a longer and thicker cock in just six and a half minutes a day?</span><br>
+                    Yes, The Growth Code™ uses a smart exercise plan to maximize every movement, so you get bigger results in a fraction of the time. I'm giving you all the perfect routines, no guesswork needed.</p>
+                <p><span class="font-bold">Is The Growth Code 365-day guarantee really no questions asked?</span><br>
+                    Answer: Yes. I guarantee you and your lady will be 100% blown away by your bigger dick,stronger erections, and all around awesomeness. Or I insist you write for a full no hassles refund within THE NEXT YEAR so you have absolutely nothing to lose.
+                </p>
+            </div>
+            <div class="eighty">
+                <h1 class="header">Yes Ryan! <span class="font-normal">I'm sick of my small cock.</span></h1>
+                <p class="center">
+                    I want to be <span class="font-bold">hung like a porn star.</span> I want to give my girl the
+                    deep-dicking of her entire life. I understand I have an entire year to
+                    test drive the program and I'll get immediate access when I click the
+                    button below.
+                </p>
+            </div>
+            <div class="bottomimg center">
+                <img loading="lazy" class="imgres content" src="images/tgc.png" alt="Get Growth Code">
+            </div>
+            <div class="end center">
+                <p>
+                    <span class="font-bold">ENDING SOON</span> <span class="red"><s>$149</s></span>
+                    <span class="font-bold">$7</span>
+                    <span class="red-button">Save $142!</span>
+                </p>
+                <div class="reviews center">
+                    <img loading="lazy" src="images/stars.svg" alt="4.8/5 based on 358 reviews">
+                    <p>Rated <span>4.8/5</span> based on <span>358 Happy Men &amp; Their Partners!</span></p>
+                </div>
+                <a href="/checkout/index2.php?affid=2352" class="cta2 next_link">
+                    Get 94% OFF<br><span class="small">YES! I WANT THE COCK OF A PORN STAR</span></a>
+                <p class="securepayments">
+                    Secure Payments Guaranteed
+                    <span class="imgspc"><img loading="lazy" src="images/Discover.png" alt="Discover"><img loading="lazy" src="images/Visa.png" alt="Visa"><img loading="lazy" src="images/Mastercard.png" alt="Mastercard"></span>
+                </p>
+                <p class="font-bold">AVAILABLE WORLDWIDE FOR INSTANT ACCESS</p>
+                <img loading="lazy" src="images/drkseals-min.png" class="secure" alt="secure">
+            </div>
+        </div>
+        <h1 class="reviewHeader">
+            <span class="red">Growth Code Reviews</span><br>
+            Real Results <span class="font-normal">From</span> Real People
+        </h1>
+        <div class="reviews center">
+            <img src="images/stars.svg" alt="4.8/5 based on 358 reviews">
+            <p class="mt-0"><span>4.8/5</span> based on <span>358</span> reviews</p>
+        </div>
+        <style>
+            .cta3 {
+                background-color: hsl(236, 55%, 25%);
+            }
+        </style>
+
+
+        <section id="reviewSection" class="review-area ptb_100">
+
+            <div class="col" data-page="1">
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="reviewHeadline">“I now have a whopping 9 inch cock!”</h3>
+
+                        <p class="reviewContent">“My penis has grown 4 inches over the course of just over 8 months. <b>I now have a whopping 9 inch cock and am getting laid more than ever.</b> Thank you Ryan for making this possible.” </p>
+
+                        <p class="reviewAuthor">~ Tony K.</p>
+                    </div>
+                </div>
+
+                <div class="card" data-page="1">
+                    <div class="card-content">
+
+                        <h3 class="reviewHeadline">“To my surprise, it actually does work!”</h3>
+
+                        <p class="reviewContent">"I was struggling primarily with control. At first I did a deep dive on the internet, and everybody was saying it won’t work. <b>To my surprise, it actually does work. My member after several weeks began to feel stronger and larger.</b> The exercises were well explained and easy to follow. I have now completed my program, and I am now experimenting with the more advanced techniques. I feel that with these exercises I have more control on when I want to ejaculate. I think if you are honest with yourself and consistent with the program you will have success. I mainly now do it 1 day on 1 day off. This way I give my body time to rest. In conclusion the program helped me be more in control and added a little size to my member 😉”
+                        </p>
+
+                        <p class="reviewAuthor">~ Anonymous</p>
+                    </div>
+                </div>
+
+                <div class="card" data-page="2">
+                    <div class="card-content">
+
+                        <h3 class="reviewHeadline">“I’ve hit 7” in length and 5.8” in girth!”</h3>
+
+                        <p class="reviewContent">“This program works. I was able to see a difference in the first week and took measurements regularly, during this time I used a pump once just to see how much the program affected the volume of blood I can hold down stairs and I’ve hit 7 inches in length and 5.8 in girth, I purposely kept this a secret from my girlfriend and the second she saw it she wasn’t able to keep herself away and I’m only beginning the 3rd week so there is absolutely going to be more gains made and absolutely more stretching” ;) </p>
+
+                        <p class="reviewAuthor">~ Fabi</p>
+                    </div>
+                </div>
+
+                <div class="card" data-page="2">
+                    <div class="card-content">
+
+                        <h3 class="reviewHeadline">“A noticeable change in my cock!”</h3>
+
+                        <p class="reviewContent">“Still new to the program, but dedicated to continuing. It's been 2-weeks and there is a noticeable change in my cock - it is more filled now, slightly larger. <b>I've seen 1/2 inch-3/4 inch in length gain and girth is certainly getting larger.</b> Was hoping for more, but if the enlargement keeps pace - It will be an inch in a month....that will be awesome! Thanks Ryan.</p>
+
+                        <p class="reviewAuthor">~ JC</p>
+                    </div>
+                </div>
+
+
+                <div class="card" data-page="3">
+                    <div class="card-content">
+
+                        <h3 class="reviewHeadline">“5.5” to 6”</h3>
+
+                        <p class="reviewContent">“Hi all! Gone from 5.5 inches to 6 on the way to more improvements.”</p>
+
+                        <p class="reviewAuthor">~ David</p>
+                    </div>
+                </div>
+
+
+                <div class="card" data-page="3">
+                    <div class="card-content">
+
+                        <h3 class="reviewHeadline">“Helped me with my confidence and improved my sex life!”</h3>
+
+                        <p class="reviewContent">“Almost done with the Growth Code course and must say I am very satisfied with the results. <b>I am currently 2.5 inches bigger</b> and also my girth has grown. This has really helped me in my confidence and improve my sex life.”</p>
+
+                        <p class="reviewAuthor">~ Anonymous</p>
+                    </div>
+                </div>
+
+
+                <div class="card" data-page="4">
+                    <div class="card-content">
+
+                        <h3 class="reviewHeadline">“Getting harder than I have in years!”</h3>
+
+                        <p class="reviewContent">“I started to notice a little bit of growth over the last couple days. A little thicker and a little more length. Not much but enough to notice. I have a girlfriend who is back east and we haven't been able to try it out but I have to masturbate for now and I have noticed more thickness especially and I've been getting harder than I have in years. I have suffered from major ED problems. And haven't been able to get it hard enough to cum, so I had to use a vibrator to get me off. I have actually masturbated twice in the last two days with pleasure I haven't felt in an age. I have many toys until my baby gets here and the last couple of days have been very explosive.”</p>
+
+                        <p class="reviewAuthor">~ Anonymous</p>
+                    </div>
+                </div>
+
+
+                <div class="card" data-page="4">
+                    <div class="card-content">
+
+                        <h3 class="reviewHeadline">“... growing longer and thicker!”</h3>
+
+                        <p class="reviewContent">“Everything is going great! My cock is growing longer and thicker! Almost every day since I started the program my wife has been wanting me more and more..I am very pleased with the results so far..and so is she.”
+                        </p>
+
+                        <p class="reviewAuthor">~ J. Hubbard</p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+            <div class="col">
+                <div class="card" data-page="1">
+                    <div class="card-content">
+
+                        <h3 class="reviewHeadline">“I’ve added ¼” in length and ½” in girth!”</h3>
+
+                        <p class="reviewContent">I'm just starting week three this week and between the exercises and the rest days I feel much more confident as I can tell my dick is getting bigger. <b>I've added a 1/4" inch in length and 1/2" in girth!</b></p>
+
+                        <p class="reviewAuthor">~ Arthur V.</p>
+
+                    </div>
+                </div>
+
+                <div class="card" data-page="1">
+                    <div class="card-content">
+
+                        <h3 class="reviewHeadline">“We are swingers. I need it to perform…”</h3>
+
+                        <p class="reviewContent">“I am in week 8 and started at 5 1/2 long 4 3/4 around inches on 10 July 2023 and was at 6 long 5 1/2 around inches on 4 August 2023. I have been using the Peruvian recipe on the site as well. I am still doing the exercises and still optimistic that it will keep growing. My wife knows I have been stretching but she does not know the reason for it and I seem to be getting a little more control. I am going to tell her when she can clearly see and feel the difference. Keeping it up and lasting longer is very important to me. <b>See we are swingers. So I need to be able to perform in different situations and possibly with people watching. So being able to get it up quickly, easily and it being bigger and lasting longer is important to me.</b> And we are having a party in a couple a weeks. So I'm hoping the growth will be more impressive by then.”
+                        </p>
+
+                        <p class="reviewAuthor">~ Robert</p>
+                    </div>
+                </div>
+
+                <div class="card" data-page="2">
+                    <div class="card-content">
+
+                        <h3 class="reviewHeadline">“I’m now 8” and growing”</h3>
+
+                        <p class="reviewContent">“Yes, yes, yes. I'm now 8" and growing. I was 5.5 when I started. I'm thicker too, and I'm proud of how I wake up erect, huge, and ready. I can reach past my navel with it, and the length from groin to navel is 8" at least. So <b>thankyou for restoring my confidence, and my wife loves it too 5 times weekly.”</b>
+                        </p>
+
+                        <p class="reviewAuthor">~ Leonard H.</p>
+                    </div>
+                </div>
+
+                <div class="card" data-page="2">
+                    <div class="card-content">
+
+                        <h3 class="reviewHeadline">“Feeling the thickness down there…”</h3>
+
+                        <p class="reviewContent">“The program is great. I’m already seeing the results and feeling the thickness down there which is good makes me walk more confidently, knowing I am getting big.”
+                        </p>
+
+                        <p class="reviewAuthor">~ Martin </p>
+                    </div>
+                </div>
+
+                <div class="card" data-page="3">
+                    <div class="card-content">
+
+                        <h3 class="reviewHeadline">“I’ve gained almost 3 inches!”</h3>
+
+                        <p class="reviewContent">“Hey Ryan, I got to say I was skeptical about trying the Growth Code program not sure really what to expect but after trying it within the first two weeks I've noticed a difference saying about a half inch growth so was quite surprised and kept going faithfully and now being on this program a couple months I'm proud to say I've gained almost 3 inches and looking forward to seeing maybe another 2 or 3 inches and then going to town on all my possible potential partners. I don't know who is skeptical about this and tired of feeling embarrassed or ashamed of their Manhood but I definitely recommend this program of Ryan's Growth Code.”
+                        </p>
+
+                        <p class="reviewAuthor">~ Anonymous</p>
+                    </div>
+                </div>
+
+                <div class="card" data-page="3">
+                    <div class="card-content">
+
+                        <h3 class="reviewHeadline">“Improved thickness and length in under 3 weeks!”</h3>
+
+                        <p class="reviewContent">“Improved thickness and length in under 3 weeks. Confidence and stamina increased as well! <b>Resulted in two very surprised and satisfied FWB’s in their early to mid 30’s.</b> Not bad for a 58 year old!!! Thanks Ryan!"
+                        </p>
+
+                        <p class="reviewAuthor">~ S. Strub</p>
+                    </div>
+                </div>
+
+                <div class="card" data-page="4">
+                    <div class="card-content">
+
+                        <h3 class="reviewHeadline">“My wife says I am hitting spots I never have before!”</h3>
+
+                        <p class="reviewContent">“Had this one month and I have increased in length and size. My wife says I am hitting spots I never have before!!! Also, my erections are like so hard they almost hurt!! So far so great!! Oh and I am 55 yo.”
+                        </p>
+
+                        <p class="reviewAuthor">~ Zak Willis</p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+                <div class="card" data-page="4">
+                    <div class="card-content">
+
+                        <h3 class="reviewHeadline">“I almost feel like you saved my life!”</h3>
+
+                        <p class="reviewContent">“So. A year ago I started looking into everything and anything to help me get even just a little growth watching heaps of porn thinking how on earth does people have such massive dicks. When me being 6.3ft and such a small 4" penis at max erect. On a cold day it would almost disappear.Then I came across the Growth Code. This is amazing if only I started this 15 years ago my god have I missed out now that I know. If u know what I mean. I can't believe these techniques are actually working. I'm so dedicated to it now it's like my new religion haha. If only my exe new would possibly still have her but nevermind. The Growth Code is kinda like going threw an adults puberty. I could almost say this is the best thing I've ever done for myself I absolutely love pussy. I could eat a clean one for days now I can actually thrust my cock in one ohh my god it's like a new lease on life. I will complete the program and probably do it again and again. I am so so grateful and it's only the beginning. I almost feel like you have saved my life. Thank you so very much”</p>
+
+                        <p class="reviewAuthor">~ Dane G.</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="col">
+
+                <div class="card" data-page="1">
+                    <div class="card-content">
+
+                        <h3 class="reviewHeadline">“It is working. My wife has told me.”</h3>
+
+                        <p class="reviewContent">“Yes it is working. My wife has told me. I have noticed the girth which is good. The length is a bit slower but it is happening.” </p>
+
+                        <p class="reviewAuthor">~ Clay L.</p>
+                    </div>
+                </div>
+
+                <div class="card" data-page="1">
+                    <div class="card-content">
+
+                        <h3 class="reviewHeadline">“Started to see growth in about two weeks…”</h3>
+
+                        <p class="reviewContent">“I bought the Growth Code program a couple months ago and started to see <b>growth in about two weeks</b>. I am very satisfied but unfortunately I am single. But with this program I am confident that my future partner will be satisfied.”</p>
+
+                        <p class="reviewAuthor">~ Dylan</p>
+                    </div>
+                </div>
+
+
+                <div class="card" data-page="2">
+                    <div class="card-content">
+
+                        <h3 class="reviewHeadline">“My girlfriend loves that I’m doing this for her pleasure”</h3>
+
+                        <p class="reviewContent">“I'm just starting my 3rd week on the program and I find it easy and rewarding. As of today I've gained about ½ inch of length and a ¼ of girth. My girlfriend loves that I'm doing this for her pleasure, we've had some great morning sex afterwards.” </p>
+
+                        <p class="reviewAuthor">~ Joseph M</p>
+                    </div>
+                </div>
+
+
+
+                <div class="card" data-page="2">
+                    <div class="card-content">
+
+                        <h3 class="reviewHeadline">“I can’t wait to see how big I get!”</h3>
+
+                        <p class="reviewContent">“Simply put, <b>I cannot just sit on the toilet and more, I have to hold my friend in my hand because it falls into the water because of your program!</b> The thickness is there also. And I can prepare myself to get a bit more out when I am going into action. It is a marvelous training.”</p>
+
+                        <p class="reviewAuthor">~ Anonymous</p>
+                    </div>
+                </div>
+
+                <div class="card" data-page="3">
+                    <div class="card-content">
+
+                        <h3 class="reviewHeadline">“Worked right from the start!”</h3>
+
+                        <p class="reviewContent">No girl at this time but when I do she should be very happy. Thanks for the Growth Code size length thickness the program worked right from the start. Tried the smoothie too and it is awesome. In my opinion WTS is the place to be to expand your knowledge ! Can’t thank you enough</p>
+
+                        <p class="reviewAuthor">~ Anonymous</p>
+                    </div>
+                </div>
+
+
+                <div class="card" data-page="3">
+                    <div class="card-content">
+
+                        <h3 class="reviewHeadline">“A noticeable size improvement is apparent!”</h3>
+
+                        <p class="reviewContent">“I glanced at the program and then, most unfortunately, deleted it by mistake along with a pack of junk adjacent to it, so I have been stretching and pulling every way I could think of ever since. Your suggestions were, or must have been, in there along with all manner of stretching elongations, for, lo and behold, a noticeable size improvement is apparent. Sadly I will have no chance to prove it in the erection stage as I am currently laid up and have been for some time, months, now. But even at 92 years old, at least hope still springs! Thanx.”</p>
+
+                        <p class="reviewAuthor">~ Ed C.</p>
+                    </div>
+                </div>
+
+                <div class="card" data-page="4">
+                    <div class="card-content">
+
+                        <h3 class="reviewHeadline">“Can’t wait to see a couple months from now!”</h3>
+
+                        <p class="reviewContent">“Only been 2 weeks so far but def have much more erections and looks much veiner and sits little plumper when flacid and girthier when hard! Can't wait to see couple months from now.”</p>
+
+                        <p class="reviewAuthor">~ King Cardo</p>
+                    </div>
+                </div>
+
+
+
+                <div class="card" data-page="4">
+                    <div class="card-content">
+
+                        <h3 class="reviewHeadline">“I’ve gained two full inches!”</h3>
+
+                        <p class="reviewContent">“Thanks for helping me achieve much more control over my cock, from getting bigger, to lasting longer. I've gained two full inches, added one inch of girth, and I can now last rock hard for over an hour. I couldn't have done it without your help. Thanks again!”</p>
+
+                        <p class="reviewAuthor">~ 5 Star Life</p>
+                    </div>
+                </div>
+
+                <div class="card" data-page="5">
+                    <div class="card-content">
+
+                        <h3 class="reviewHeadline">“Improved my confidence let alone my sex life!”</h3>
+
+                        <p class="reviewContent">“The program has helped improve my confidence let alone my sex life. I don’t even mind getting naked and going for a swim in my pool”
+                        </p>
+
+                        <p class="reviewAuthor">~ Anonymous</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="javascript:void(0)" onclick="next()" class="cta2 cta3">
+                Read More<br><span class="small">To Page <span class="nextPage">2</span> → </span></a>
+        </section>
     </div>
-  </div>
-</section>
+    <div id="squeeze">
 
-<!-- FICHAS -->
-<section>
-  <div class="container-largo">
-    <div class="section-title capitulo" style="text-align:center;margin-bottom:44px">
-      <span class="capitulo-num">Extras do conto</span>
-      <h2>Ficha dos personagens</h2>
+        <div id="squeezeInner">
+                        <div class="squeezeSlide" id="slide1" data-slideid="1" style="display:block;">
+                <h1>What describes you best?</h1>
+                <div class="options">
+                    <div class="option"><input data-questionid="1" data-responseid="1" type="radio"> I rarely get hard</div>
+                    <div class="option"><input data-questionid="1" data-responseid="2" type="radio"> I never get hard</div>
+                    <div class="option"><input data-questionid="1" data-responseid="3" type="radio"> I want to increase my dick size</div>
+                    <div class="option"><input data-questionid="1" data-responseid="4" type="radio"> I just want to have more sex</div>
+                </div>
+            </div>
+            <div class="squeezeSlide" id="slide2" data-slideid="2" style="display:none;">
+                <h1>What is your age range?</h1>
+                <div class="options">
+                    <div class="option"><input data-questionid="2" data-responseid="1" type="radio"> 18-28</div>
+                    <div class="option"><input data-questionid="2" data-responseid="2" type="radio"> 29-39</div>
+                    <div class="option"><input data-questionid="2" data-responseid="3" type="radio"> 40-50</div>
+                    <div class="option"><input data-questionid="2" data-responseid="4" type="radio"> 51-70</div>
+                </div>
+            </div>
+            <div class="squeezeSlide" id="slide3" data-slideid="3" style="display:none;">
+                <h1>Do you suffer from premature ejaculation?</h1>
+                <div class="options">
+                    <div class="option"><input data-questionid="3" data-responseid="1" type="radio"> Yes</div>
+                    <div class="option"><input data-questionid="3" data-responseid="2" type="radio"> No</div>
+                </div>
+            </div>
+            <div class="squeezeSlide" id="slide4" data-slideid="4" style="display:none;">
+                <h1>How often are you having sex?</h1>
+                <div class="options">
+                    <div class="option"><input data-questionid="4" data-responseid="1" type="radio"> Almost never</div>
+                    <div class="option"><input data-questionid="4" data-responseid="2" type="radio"> A few times a month</div>
+                    <div class="option"><input data-questionid="4" data-responseid="3" type="radio"> A few times a week</div>
+                    <div class="option"><input data-questionid="4" data-responseid="4" type="radio"> Everyday</div>
+                </div>
+            </div>
+            <div class="squeezeSlide" id="slide5" data-slideid="5" style="display:none;">
+                <h1>What's your goal?</h1>
+                <div class="options">
+                    <div class="option"><input data-questionid="5" data-responseid="1" type="radio"> Harder erections</div>
+                    <div class="option"><input data-questionid="5" data-responseid="2" type="radio"> More erections</div>
+                    <div class="option"><input data-questionid="5" data-responseid="3" type="radio"> Increased penis size</div>
+                    <div class="option"><input data-questionid="5" data-responseid="4" type="radio"> Have more sex</div>
+                </div>
+            </div>
+            <div id="optIn">
+                <h1>Thanks So Much For Taking<br>My Anonymous Survey</h1>
+                <p class="center">
+                    As A Reward, I’m Going To<br>
+                    Rush You The Breakthrough<br>
+                    Study That Reveals A New Way<br>
+                    To Restore Your Ability To Get<br>
+                    Hard Almost On Demand<br><br>
+                    Just Enter A Discreet Email Below Now
+                </p>
+                <h3 id="squeezeError">
+                    <span class="errorText"></span>
+                    <div style="clear:both;"></div>
+                </h3>
+                <div id="squeezeLoading">
+                    <img loading="lazy" src="images/ajaxYellow.svg" alt="Yellow loading spin">
+                    <p>Sending your special gift...</p>
+                </div>
+                <div class="form">
+                    <div style="color: yellow; text-align: center;margin-bottom:.5rem">
+                        <span id="success" style="display: none">Contact Successfully Submitted.</span>
+                    </div>
+                    <div>
+                        <input type="text" id="firstname" name="firstname" placeholder="Name">
+                    </div>
+                    <div>
+                        <input type="email" id="email" name="email" placeholder="Email Address">
+                    </div>
+                    <div>
+                        <button type="submit" class="gmsubmit" id="ontra">
+                            SUBSCRIBE
+                        </button>
+                    </div>
+                    <ul class="my-2 text-white" id="errorMsg"></ul>
+                </div>
+            </div>
+            <div id="squeezeFooter">
+                (Submitting Your Answers Will NOT Interrupt Video)
+            </div>
+            <div id="squeezeOptInFooter">
+                <p>
+                    Your Privacy Is Important To Us. Your Answers Are Never Associated With Your Email Address (Which Will Also Remain Completely Confidential)
+                </p>
+            </div>
+            <div id="progress">
+                <div id="progressInner"></div>
+                <div id="progressText"></div>
+            </div>
+        </div>
     </div>
-    <div class="fichas">
-      <div class="ficha">
-        <h4>Marceloxz</h4>
-        <div class="apelido">“O que anota tudo”</div>
-        <ul>
-          <li><strong>Espécie:</strong> Chimpanzé (fictício)</li>
-          <li><strong>Idade:</strong> Não informada no conto</li>
-          <li><strong>Morada:</strong> Vale das Bananas Tortas</li>
-          <li><strong>Talento:</strong> Escrever em caderno de folhas</li>
-          <li><strong>Defeito:</strong> Fala demais quando fica nervoso</li>
-          <li><strong>Frase:</strong> “O céu das seis e doze é o mais bonito.”</li>
-        </ul>
-      </div>
-      <div class="ficha rosa">
-        <h4>Raquel</h4>
-        <div class="apelido">“A que espera o barulho passar”</div>
-        <ul>
-          <li><strong>Espécie:</strong> Gorila (fictícia)</li>
-          <li><strong>Morada original:</strong> Serra do Silêncio</li>
-          <li><strong>Talento:</strong> Ficar em silêncio sem incomodar ninguém</li>
-          <li><strong>Defeito:</strong> Demora para dizer o que sente</li>
-          <li><strong>Qualidade:</strong> Paciência infinita</li>
-          <li><strong>Frase:</strong> “Já é o suficiente.”</li>
-        </ul>
-      </div>
-      <div class="ficha amarela">
-        <h4>João Pedro</h4>
-        <div class="apelido">“O filhote de dois mundos”</div>
-        <ul>
-          <li><strong>Espécie:</strong> Meio gorila, meio chimpanzé (fictício)</li>
-          <li><strong>Nascimento:</strong> Manhã de neblina, 6h12</li>
-          <li><strong>Talento:</strong> Subir em árvore e depois parar para admirar</li>
-          <li><strong>Defeito:</strong> Pergunta tudo duas vezes</li>
-          <li><strong>Marca registrada:</strong> Dormia abraçado a um cacho de banana</li>
-          <li><strong>Frase:</strong> “Eu sou do Marceloxz e da Raquel.”</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+    <p id="loading-indicator" style="display:none;">Processing...</p>
 
-<!-- MORAL -->
-<section class="fundo-branco" id="moral">
-  <div class="container-largo">
-    <div class="moral">
-      <span class="emoji">🍌</span>
-      <h3>A moral da história</h3>
-      <p>
-        Marceloxz era pequeno e falava muito. Raquel era grande e falava pouco.
-        João Pedro veio no meio dos dois e não precisou escolher de quem puxar —
-        ele puxou dos dois, e ficou completo.
-      </p>
-      <p>
-        No fim, o conto não é sobre espécies diferentes. É sobre gente (ou bicho)
-        que decide ficar. Porque família não é o que a gente é por fora:
-        é o que a gente escolhe ser por dentro.
-      </p>
-      <div class="assinatura">Fim — e começo de outra história</div>
-    </div>
-  </div>
-</section>
+        <footer>
+        <p>© 2026 Get Growth Code
+                            | <a target="blank" style="font-size: .75rem; opacity: .50;color:#fff" href="https://wts.everflowclient.io/affiliate/signup">Become an Affiliate</a> | <a target="blank" style="font-size: .75rem; opacity: .50;color:#fff" href="https://www.markpensun.com/o-lpkk-m64-cdfc8bb1e6bed2280b9c31f015b426e8">Email Unsubscribe</a>
+            
+        </p>
+    </footer>
+    <input id="pager" type="hidden" value="1">
+    <script src="js/jquery.min.js"></script>
 
-<!-- CTA -->
-<section class="cta">
-  <div class="container">
-    <h2>Gostou do conto?</h2>
-    <p>Essa história é fictícia e foi criada só para esta demonstração. Se quiser, você pode reescrever, ampliar ou transformar em série.</p>
-    <a href="#inicio" class="btn">Voltar ao início</a>
-  </div>
-</section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-container">
-    <div class="logo-footer">🍌 Contos do Marceloxz</div>
-    <p>Esta é uma página de demonstração criada para testar um cloaker serverside. O conto de Marceloxz, Raquel e João Pedro é inteiramente fictício e inventado para este exemplo.</p>
-    <p>Nenhum dado é coletado, nenhum formulário é enviado e nenhuma informação é armazenada.</p>
-    <div class="footer-aviso">
-      ⚠️ <strong>Aviso:</strong> personagens, espécies, lugares e acontecimentos são inventados.
-      Nenhuma pessoa, animal ou comunidade real está sendo representada. Página sem fins comerciais.
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span>© 2026 Contos do Marceloxz (fictício) — DEMO EDUCACIONAL</span>
-    <span>Nada aqui é real. Era só uma historinha. 🐒</span>
-  </div>
-</footer>
+    <script type="text/javascript" language="javascript" src="js/squeeze.js" async=""></script>
+    <link type="text/css" rel="stylesheet" href="css/squeezepop.css">
+    <style>
+        #squeeze {
+            display: none;
+        }
+    </style>
+    <script type="text/javascript" src="js/ouibounce.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.card').not('[data-page=1]').hide();
 
-<script>
-  // Demo: links "#" não fazem nada
-  document.querySelectorAll('a[href="#"]').forEach(function(a){
-    a.addEventListener('click', function(e){
-      e.preventDefault();
-      alert('DEMO EDUCACIONAL: página fictícia, nenhuma ação real é executada.');
-    });
-  });
-</script>
+        });
 
-</body>
-</html>
+        function next() {
+            var page = $('#pager').val();
+            page = parseInt(page);
+            var nextPage = page + 1;
+            var pageAfter = nextPage + 1;
+
+            var np = $('.nextPage').text();
+            np = parseInt(np);
+            np = np + 1;
+
+
+            if (nextPage >= 5) {
+                nextPage = 1;
+            }
+
+            $('#pager').val(nextPage);
+            $('.nextPage').text(np);
+            loadPage(nextPage);
+
+            $('html, body').animate({
+                scrollTop: $("#reviewSection").offset().top
+            }, 1000);
+        }
+
+        function loadPage(page) {
+            $('.card').hide();
+            var elems = $('[data-page="' + page + '"]').fadeIn();
+
+        }
+
+        function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function setCookie(cname, cvalue, exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        $(function() {
+
+            function str_pad_left(string, pad, length) {
+                return (new Array(length + 1).join(pad) + string).slice(-length);
+            }
+
+            var popTime = 476000;
+            popTime = popTime / 1000;
+            var timerTime = popTime - 300;
+
+            var popTimeInterval = setInterval(function() {
+
+                var currTime = _vidalytics.embeds.vidalytics_embed_yCt_fhBWXDoUNRjG.player.getCurrentVideoTime();
+
+                if (currTime > popTime) {
+                    showTarget();
+                    if ($('.timer').length > 0) {
+                        $(".timer").fadeOut("fast", function() {
+                            $('.timer').remove();
+                        });
+                    }
+                    clearInterval(popTimeInterval);
+                }
+
+                
+                    if (currTime > timerTime && $('.timer').length > 0) {
+
+                        var timeLeft = popTime - currTime;
+                        var minutes = Math.floor(timeLeft / 60);
+                        var seconds = timeLeft - minutes * 60;
+                        var finalTime = str_pad_left(minutes, '0', 2) + ':' + str_pad_left(seconds, '0', 2);
+
+                        $('.timer-span').text(finalTime);
+
+                        if ($('.timer').hasClass('hidden')) {
+                            $('.timer').removeClass('hidden');
+                        }
+
+                    }
+
+                
+
+            }, 400);
+
+
+            if (getCookie('seen') == '1') {
+                showTarget();
+            } else {
+                setCookie('seen', '1', 1);
+            }
+
+            
+        });
+
+        function showTarget() {
+            $("#ctapop").show();
+            $("body").addClass('popped');
+            $('.grouping').css('padding-bottom', 0);
+            $('footer').css('position', 'unset');
+
+                    }
+    </script>
+    <script>
+        
+            function urlChanged() {
+                var url = window.location.href;
+                if (url.indexOf("q=1") == -1) {
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+
+            function changeHistory() {
+                var urlHasAlreadyChanged = urlChanged();
+
+                if (history && history.pushState && !urlHasAlreadyChanged) {
+                    const url = new URL(window.location);
+                    url.searchParams.set("q", "1");
+                    window.history.pushState({}, "", url);
+
+                    document.removeEventListener("click", changeHistory);
+                }
+            }
+
+            document.addEventListener("click", changeHistory);
+
+            function popIt() {
+                // The popstate event is fired each time when the current history entry changes.
+                $("#squeeze").css('display', 'unset');
+                $(".overlay").css('display', 'unset');
+                if (typeof _vidalytics.embeds !== "undefined") {
+
+                    _vidalytics.embeds.vidalytics_embed_yCt_fhBWXDoUNRjG.player.pause();
+
+
+                }
+                window.removeEventListener("popstate", popIt);
+            }
+
+
+            function playVid() {
+                checkVideoPlay = setInterval(function() {
+                    if (typeof _vidalytics.embeds !== "undefined") {
+                        clearInterval(checkVideoPlay);
+
+                        if (_vidalytics.embeds.vidalytics_embed_yCt_fhBWXDoUNRjG.player.player.isMuted()) {
+                            _vidalytics.embeds.vidalytics_embed_yCt_fhBWXDoUNRjG.player.seekTo(0);
+                        }
+                        _vidalytics.embeds.vidalytics_embed_yCt_fhBWXDoUNRjG.player.play();
+                        _vidalytics.embeds.vidalytics_embed_yCt_fhBWXDoUNRjG.player.player.unmute();
+
+                        if ("undefined" !== typeof $('.Thumbnail__wrapper')) {
+                            $('.Thumbnail__wrapper').remove();
+                        }
+
+                    }
+
+                }, 100)
+            }
+
+            $(".overlay,.warningBtn,.warning-close-link").on("click", function() {
+                overlayController();
+            });
+
+            function overlayController() {
+                $("#squeeze").css('display', 'none');
+                $(".overlay").css('display', 'none');
+                playVid();
+
+                if ($('.warning').length == 1) {
+
+                    $('.warning').remove();
+                    $('.warning2').remove();
+
+
+                }
+
+                setTimeout(() => {
+                    window.addEventListener(
+                        "popstate",
+                        popIt,
+                        false
+                    );
+                }, "1000");
+            }
+
+            </script>
+    <script type="text/javascript">
+        function isEmail(email) {
+            var regex =
+                /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            return regex.test(email);
+        }
+
+        var contactCreated = 0;
+        var hasError = false;
+        $(document).ready(function() {
+            $("#ontra").on("click", function() {
+                $('#errorMsg').html('');
+                if (!contactCreated) {
+                    if ($.trim($("input[name=firstname]").val()) == "") {
+                        $("input[name=firstname]").addClass("hasError");
+                        hasError = true;
+                        $('<li id="nameError">Please fill out your name.</li>').appendTo('#errorMsg');
+                    } else {
+                        $("input[name=firstname]").removeClass("hasError");
+                        hasError = false;
+                        $('#nameError').remove();
+                    }
+                    if (!isEmail($("#email").val())) {
+                        $("#email").addClass("hasError");
+                        hasError = true;
+                        $('<li id="emailError">Please provide a valid email.</li>').appendTo('#errorMsg');
+
+                    } else {
+                        $("#email").removeClass("hasError");
+                        hasError = false;
+                        $('#emailError').remove();
+
+                    }
+                    if (!hasError) {
+                        $("#loading-indicator").show();
+                        var email = $('#email').val();
+                        var first_name = $('#firstname').val();
+                        // webbula..................
+                        $.ajax({
+                            url: "/ajax/webula.php",
+                            type: "POST",
+                            data: {
+                                name: first_name,
+                                email: email
+                            },
+                            cache: false,
+                            success: function(dataResult) {
+                                var dataResult = JSON.parse(dataResult);
+                                console.log(dataResult);
+                                var emailid = dataResult['emails']['0']['email'];
+                                var webbula_result = dataResult['emails']['0']['result'];
+                                if (dataResult['emails']['0']['corrected']) {
+                                    var corrected_email = dataResult['emails']['0']['email'];
+                                } else {
+                                    var corrected_email = email;
+                                }
+                                if (webbula_result == 'Conversion' || webbula_result == 'Beta' || webbula_result == 'Unknown' || webbula_result == 'Valid') {
+                                    $.post(
+                                        "/ajax/ontraportContact.php", {
+                                            firstName: $("#firstname").val(),
+                                            email: $("#email").val(),
+                                            tags: [1119],
+                                            affid: "2352"
+                                        },
+                                        function(data, status) {
+                                            var obj = JSON.parse(data);
+                                            window.console.log("Ontraport Response: " + obj.code);
+                                            $("#loading-indicator").hide();
+                                            if (!obj.code) {
+                                                $("#firstname").val("");
+                                                $("#email").val("");
+                                                $("#success").show();
+                                                contactCreated = 1;
+                                                overlayController();
+                                            }
+                                        }
+                                    );
+                                } else {
+                                    alert("This email is not accepted.");
+                                    $("#loading-indicator").hide();
+                                }
+                            }
+                        });
+
+                        // ..................
+
+                    }
+                }
+            });
+        });
+
+        $('.exitPopButton').on('click', function() {
+            $("#squeeze").css('display', 'none');
+            $(".overlay").css('display', 'none');
+            playVid();
+        });
+
+        
+            checkVideo2 = setInterval(function() {
+
+                if (typeof _vidalytics.embeds !== "undefined") {
+
+                    var time = $('#vidalytics_embed_yCt_fhBWXDoUNRjG').find('video').eq(0)[0].currentTime;
+
+                    if (time > 0.1) {
+                        _vidalytics.embeds.vidalytics_embed_yCt_fhBWXDoUNRjG.player.setPlaybackSpeed(1.25);
+                        clearInterval(checkVideo2);
+                    }
+                }
+
+            }, 100)
+
+        
+
+        if (typeof ouibounce === 'function') {
+
+            var _ouibounce = ouibounce(false, {
+                aggressive: true,
+                timer: 2000,
+                callback: popIt
+            });
+
+        }
+
+        window.addEventListener("scroll", function() {
+            elementTarget = document.getElementById("reviewH");
+            if ((parseFloat(window.scrollY)) > ((parseFloat(elementTarget.offsetTop)) + (parseFloat(elementTarget.offsetHeight)))) {
+                $('body').addClass('stickyH');
+
+            } else {
+                $('body').removeClass('stickyH');
+            }
+        });
+
+        document.addEventListener("click", changeHistory);
+
+        
+            var EMBED_CODE_ID = 'vidalytics_embed_yCt_fhBWXDoUNRjG'; // update this to match your Vidalytics Embed ID
+            var vidalyticsPlayerAPI = null;
+
+            function initializePlayerAPI() {
+                console.log('initializePlayerAPI()');
+                var player = getPlayer();
+                if (player._player) {
+                    vidalyticsPlayerAPI = player;
+                    onPlayerAPIAvailableCallback();
+                    return;
+                }
+
+                setTimeout(initializePlayerAPI, 100);
+            }
+            initializePlayerAPI();
+
+            function getPlayer() {
+                console.log('getPlayer()');
+                var embeds = (window._vidalytics || {}).embeds || {};
+                if (embeds[EMBED_CODE_ID]) {
+                    return embeds[EMBED_CODE_ID].player || {};
+                }
+                return {};
+            }
+
+            function onPlayerAPIAvailableCallback() {
+                vidalyticsPlayerAPI._player.on('ended', function() {
+                    videoEndRedirect();
+                });
+            }
+
+        
+        function videoEndRedirect() {
+            var c1 = $('#c1').val();
+            window.location.href = "/checkout/index2.php?affid=2352&c1=" + c1;
+        }
+    </script>
+
+
+</body></html>
