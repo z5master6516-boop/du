@@ -1,344 +1,1064 @@
-<!DOCTYPE html><html lang="en"><head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
-  <title>Special Presentation</title>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>A História de Marceloxz, Raquel e João Pedro | Conto Ilustrado</title>
+<style>
+  /* ============================================================
+     DEMO EDUCACIONAL — PÁGINA FICTÍCIA PARA TESTE DE CLOAKER
+     Conto 100% inventado. Nenhum dado é coletado.
+     ============================================================ */
+  :root{
+    --verde-mata:#2E5D3A;
+    --verde-claro:#4E8A5E;
+    --areia:#F7F3E8;
+    --areia-escura:#EDE4D0;
+    --marrom:#5D4037;
+    --marrom-claro:#8D6E63;
+    --banana:#F4C430;
+    --banana-claro:#FFE082;
+    --rosa:#E91E63;
+    --texto:#2F2A26;
+    --cinza:#6E6459;
+    --branco:#FFFFFF;
+    --sombra:0 10px 40px rgba(46,93,58,0.10);
+    --raio:20px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Georgia','Times New Roman',serif;
+    background:var(--areia);
+    color:var(--texto);
+    line-height:1.8;
+    padding-top:58px;
+  }
 
-  <!-- TRACKER (RedTrack): PRIMEIRO script do head, como nos layouts feitos à mão. Sem ele a
-       landing não roda o track.js do tracker da campanha e o clique chega sem o script de
-       atribuição — o construtor nascera sem esta linha (reportado pelo Pedro, 28/07). -->
-  <script type="text/javascript" defer="" src="js/track_1.js"></script><script async="" src="js/gtm.js"></script><script type="text/javascript" src="js/track.js"></script>
+  /* FAIXA DEMO */
+  .demo-banner{
+    position:fixed;top:0;left:0;width:100%;
+    background:#2E5D3A;color:#fff;text-align:center;
+    padding:11px 16px;font-size:.85rem;font-weight:700;
+    font-family:'Segoe UI',Arial,sans-serif;
+    letter-spacing:.4px;z-index:9999;
+    box-shadow:0 2px 12px rgba(0,0,0,.2);
+  }
+  .demo-banner span{
+    background:#F4C430;color:#2E5D3A;padding:2px 9px;
+    border-radius:4px;margin-right:7px;font-size:.75rem;font-weight:900;
+  }
 
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-ML3FPQK9');</script>
-  <!-- End Google Tag Manager -->
+  /* HEADER */
+  header{
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--areia-escura);
+    position:sticky;top:58px;z-index:900;
+  }
+  .header-container{
+    max-width:1100px;margin:0 auto;padding:16px 24px;
+    display:flex;align-items:center;justify-content:space-between;
+    font-family:'Segoe UI',Arial,sans-serif;
+  }
+  .logo{
+    display:flex;align-items:center;gap:10px;
+    font-size:1.15rem;font-weight:900;color:var(--verde-mata);
+    text-decoration:none;letter-spacing:-.3px;
+  }
+  .logo svg{width:34px;height:34px}
+  nav ul{display:flex;list-style:none;gap:26px}
+  nav a{
+    color:var(--cinza);text-decoration:none;font-size:.9rem;
+    font-weight:600;transition:color .2s;
+  }
+  nav a:hover{color:var(--verde-mata)}
+  .btn-header{
+    background:var(--verde-mata);color:#fff;padding:10px 22px;
+    border-radius:50px;text-decoration:none;font-size:.85rem;
+    font-weight:700;transition:transform .2s,background .2s;
+  }
+  .btn-header:hover{background:var(--verde-claro);transform:translateY(-2px)}
 
-  <!-- Checkout/pixel do PRODUTO (Cadastros → Produto → Script do head) -->
-  <script>var mysrc = "https://tracking.buygoods.com/track/?a=13218&firstcookie=0"+"&tracking_redirect=&referrer="+encodeURIComponent(document.referrer)+"&sessid2="+ReadCookie('sessid2')+"&product=sta2,sta3,sta6&vid1=&vid2=&vid3=&caller_url="+encodeURIComponent(window.location.href); if(typeof add_to_cart !== 'undefined') { mysrc = mysrc+'&add_to_cart='+add_to_cart; } var newScript = document.createElement('script'); newScript.type = 'text/javascript'; newScript.defer = true; newScript.src = mysrc; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(newScript, s); function ReadCookie(name){name += '='; var parts = document.cookie.split(/;\s*/);for (var i = 0; i < parts.length; i++) {var part = parts[i]; if (part.indexOf(name) == 0) return part.substring(name.length)} return '';}</script>
-  <script type="text/javascript">setTimeout(function () {var i = document.createElement("iframe"),oid = new URLSearchParams(window.location.search);i.async = true;i.style="display:none";i.setAttribute("src", "https://buygoods.com/affiliates/go/conversion/iframe/bg?a=13218&t=49581b847467526f8fffee8539cf8a34&s="+ReadCookie('sessid2'));document.body.appendChild(i);}, 1000);</script>
+  /* HERO */
+  .hero{
+    padding:70px 24px 60px;
+    background:
+      radial-gradient(circle at 15% 20%, rgba(244,196,48,.16), transparent 45%),
+      radial-gradient(circle at 85% 70%, rgba(78,138,94,.14), transparent 45%),
+      var(--areia);
+    text-align:center;position:relative;overflow:hidden;
+  }
+  .hero-selo{
+    display:inline-block;background:#fff;border:2px solid var(--banana);
+    color:var(--marrom);padding:7px 20px;border-radius:50px;
+    font-size:.78rem;font-weight:800;letter-spacing:2px;
+    text-transform:uppercase;margin-bottom:26px;
+    font-family:'Segoe UI',Arial,sans-serif;
+    box-shadow:0 4px 14px rgba(244,196,48,.25);
+  }
+  .hero h1{
+    font-size:3.1rem;line-height:1.15;color:var(--verde-mata);
+    margin-bottom:18px;font-weight:900;letter-spacing:-1px;
+    max-width:900px;margin-left:auto;margin-right:auto;
+  }
+  .hero h1 em{
+    font-style:normal;color:var(--marrom);
+    border-bottom:6px solid var(--banana);
+  }
+  .hero .subtitulo{
+    font-size:1.15rem;color:var(--cinza);max-width:680px;
+    margin:0 auto 36px;font-style:italic;
+  }
+  .hero-aviso{
+    max-width:760px;margin:0 auto 34px;
+    background:rgba(244,196,48,.14);
+    border:1px dashed var(--banana);
+    border-radius:14px;padding:16px 22px;
+    font-size:.88rem;color:var(--marrom);
+    font-family:'Segoe UI',Arial,sans-serif;
+  }
+  .hero-aviso strong{color:var(--verde-mata)}
 
-  <!-- Preload do player (vTurb speed script da VSL) -->
-  <script>!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
-<link rel="preload" href="js/player.js" as="script">
-<link rel="preload" href="js/smartplayer.js" as="script">
-<link rel="preload" href="https://cdn.converteai.net/aef7770b-d8e8-4e9a-91cf-fa43a6a3e23d/6aa09c7f41105cb521074dc0/main.m3u8" as="fetch">
-<link rel="dns-prefetch" href="https://cdn.converteai.net">
-<link rel="dns-prefetch" href="https://scripts.converteai.net">
-<link rel="dns-prefetch" href="https://images.converteai.net">
-<link rel="dns-prefetch" href="https://license.vturb.com">
+  /* TRÍO DE RETRATOS */
+  .trio{
+    display:flex;justify-content:center;align-items:flex-end;
+    gap:8px;flex-wrap:wrap;margin:20px auto 0;max-width:820px;
+  }
+  .retrato-box{
+    background:#fff;border-radius:24px;padding:14px 14px 8px;
+    box-shadow:var(--sombra);border:3px solid var(--areia-escura);
+    transition:transform .3s;width:190px;
+  }
+  .retrato-box:hover{transform:translateY(-8px) rotate(-2deg)}
+  .retrato-box.destaque{border-color:var(--banana);transform:scale(1.08)}
+  .retrato{width:100%;height:auto;display:block}
+  .retrato-box .nome{
+    font-family:'Segoe UI',Arial,sans-serif;font-size:.82rem;
+    font-weight:800;color:var(--verde-mata);text-align:center;
+    padding:8px 0 4px;text-transform:uppercase;letter-spacing:1px;
+  }
+  .retrato-box .papel{
+    font-family:'Segoe UI',Arial,sans-serif;font-size:.72rem;
+    color:var(--cinza);text-align:center;padding-bottom:4px;
+  }
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+  /* SEÇÕES */
+  section{padding:70px 24px}
+  .container{max-width:820px;margin:0 auto}
+  .container-largo{max-width:1100px;margin:0 auto}
 
-  <style>
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{-webkit-text-size-adjust:100%}
-    body{background:#000000;font-family:Poppins,Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased;color:#111}
-    img{max-width:100%;display:block}
-    .topbar{position:fixed;top:0;left:0;right:0;z-index:9999;background:#c0392b;color:#ffffff;text-align:center;font-weight:700;font-size:14px;line-height:1.35;padding:10px 14px}
-    .wrap{max-width:900px;margin:0 auto;padding:0 16px}
-    .headline{font-weight:800;font-size:30px;line-height:1.13;text-align:center;letter-spacing:-.01em;color:#ffffff;margin:26px auto 20px}
-    .headline .hl{color:#eba937}
-    @media (max-width:640px){.headline{font-size:26px}}
-    /* com headline, o respiro acima do vídeo é a margem de baixo dela; sem headline, o
-       vídeo aplica o mesmo valor — o número é o mesmo nos dois casos */
-    .video{max-width:900px;margin:0 auto 0}
-    .esconder{display:none}
-    /* botão de compra do produto: SEMPRE 3px abaixo da VSL */
-    .buybox{margin-top:3px}
-    /* cabeçalho de portal */
-    .hd{background:#ffffff;border-bottom:1px solid #e5e7eb;font-family:Nunito,Poppins,Arial,Helvetica,sans-serif}
-    .hd-in{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 16px;min-height:50px}
-    .hd-l{display:flex;align-items:center;flex:0 0 auto}
-    .hd-logo-img{height:30px;width:auto;display:block}
-    .hd-logo-txt{font-weight:900;font-size:19px;letter-spacing:-.02em;color:#333333;line-height:1}
-    /* menu com rolagem lateral no celular em vez de sumir (o original escondia) */
-    .hd-nav{display:flex;align-items:center;gap:18px;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}
-    .hd-nav::-webkit-scrollbar{display:none}
-    .hd-nav span{color:#333333;font-weight:600;font-size:15px;white-space:nowrap;padding:6px 0}
-    .hd-r{display:flex;align-items:center;gap:10px;flex:0 0 auto}
-    .hd-search{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;color:#333333}
-    .hd-btn{padding:6px 14px;color:#333333;font-weight:600;font-size:14px;border:1px solid #e5e7eb;border-radius:20px;white-space:nowrap}
-    /* celular: menu ganha a linha de baixo (como nos portais) em vez de ser cortado no meio */
-    @media (max-width:640px){
-      .hd-in{flex-wrap:wrap;gap:6px;padding-bottom:8px;min-height:0}
-      .hd-l{flex:1 1 auto}
-      .hd-logo-txt{font-size:17px}
-      .hd-nav{order:3;width:100%;gap:16px;padding-top:2px}
-      .hd-nav span{font-size:13px;padding:2px 0}
-      .hd-btn{display:none}
-    }
-    /* prova social (visual de rede social) */
-    .cmts{max-width:680px;margin:30px auto 0;font-family:Helvetica,Arial,sans-serif}
-    .cmts-h{border-bottom:1px solid #e9ebee;padding-bottom:14px;margin-bottom:16px;font-weight:600;font-size:14px;color:#1c1e21}
-    .cmt{display:flex;align-items:flex-start;gap:8px;margin-bottom:14px}
-    .cmt-av{flex:0 0 48px;width:48px;height:48px;border-radius:50%;overflow:hidden;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;color:#4b4f56}
-    .cmt-av-s{flex-basis:36px;width:36px;height:36px;font-size:13px}
-    .cmt-av img{width:100%;height:100%;object-fit:cover}
-    .cmt-body{width:100%}
-    .cmt-user{color:#385898;font-weight:600;font-size:14px;line-height:1.358;text-transform:capitalize;word-break:break-word}
-    .cmt-text{color:#1c1e21;line-height:19.12px;margin:4px 0 6px;font-size:14px;word-break:break-word}
-    .cmt-misc{display:flex;align-items:center;gap:4px;line-height:16px;font-size:12px;color:#4267b2;font-weight:400}
-    .cmt-misc .cmt-dot,.cmt-misc .cmt-time{color:#90949c}
-    .cmt-likes{display:flex;align-items:center;gap:4px;margin-left:6px;color:#1c1e21}
-    .cmt-likes .lk{display:inline-flex;align-items:center;justify-content:center;flex:0 0 16px;width:16px;height:16px;border-radius:50%;background:linear-gradient(180deg,#18afff,#0062df)}
-    .cmt-likes .lk svg{display:block;width:9px;height:9px}
-    .cmt-kids{margin-left:48px;border-left:1px dotted #d3d6db;padding-left:8px;margin-bottom:14px}
-    .cmt-kids .cmt{margin-bottom:8px}
-    /* rodapé */
-    .ftr{margin-top:34px;padding:26px 16px;text-align:center;font-family:Helvetica,Arial,sans-serif}
-    .ftr .ftr-t{font-size:14px;font-weight:400;line-height:18px}
-    .ftr .ftr-s{font-size:11px;font-weight:300;line-height:18px;margin-top:4px}
-  </style>
-<script src="js/player.js" async=""></script></head>
-<body style="padding-top: 39px;">
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ML3FPQK9"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+  .capitulo-num{
+    display:block;font-family:'Segoe UI',Arial,sans-serif;
+    font-size:.75rem;font-weight:800;letter-spacing:3px;
+    text-transform:uppercase;color:var(--banana);
+    margin-bottom:10px;
+  }
+  .capitulo h2{
+    font-size:2.2rem;color:var(--verde-mata);line-height:1.2;
+    margin-bottom:24px;font-weight:900;letter-spacing:-.5px;
+  }
+  .capitulo p{
+    font-size:1.12rem;color:#443E38;margin-bottom:20px;
+  }
+  .capitulo p.lead{
+    font-size:1.25rem;color:var(--marrom);font-style:italic;
+    border-left:4px solid var(--banana);padding-left:20px;
+    margin-bottom:28px;
+  }
+  .capitulo strong{color:var(--verde-mata)}
 
-  <div class="topbar"><span id="topbar-msg">Attention: This presentation is only available until 09/13/2026</span></div>
+  /* CAIXA DE DIÁLOGO */
+  .fala{
+    background:#fff;border-radius:16px;padding:22px 26px;
+    margin:26px 0;box-shadow:var(--sombra);
+    border-left:5px solid var(--verde-claro);
+    font-style:italic;color:var(--marrom);
+    position:relative;font-size:1.05rem;
+  }
+  .fala::before{
+    content:"💬";position:absolute;top:-14px;left:20px;
+    background:var(--verde-mata);width:32px;height:32px;
+    border-radius:50%;display:flex;align-items:center;
+    justify-content:center;font-size:.9rem;font-style:normal;
+  }
+  .fala .quem{
+    display:block;font-style:normal;font-weight:800;
+    font-size:.82rem;color:var(--verde-claro);
+    text-transform:uppercase;letter-spacing:1px;
+    margin-top:10px;font-family:'Segoe UI',Arial,sans-serif;
+  }
 
+  /* CENA ILUSTRADA */
+  .cena{
+    background:#fff;border-radius:24px;padding:32px;
+    box-shadow:var(--sombra);margin:36px 0;text-align:center;
+    border:2px solid var(--areia-escura);
+  }
+  .cena svg{max-width:420px;width:100%;height:auto}
+  .cena .legenda{
+    font-family:'Segoe UI',Arial,sans-serif;font-size:.82rem;
+    color:var(--cinza);margin-top:16px;font-style:italic;
+  }
 
-  <div class="wrap">
-    <h1 class="headline">The Horse Jelly Secret Behind 3.4 Inches in <span class="hl">Just 9 Days</span></h1>
+  /* DIVISOR */
+  .divisor{
+    text-align:center;margin:50px 0;color:var(--banana);
+    font-size:1.6rem;letter-spacing:14px;
+  }
 
-    <div class="video" id="scrolldown">
-      <vturb-smartplayer id="vid-6aa0a0a396f385954ead70c1" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"><div class="vturb-player-placeholder" style="position: relative; width: 100%; padding: 178.14814814814815% 0 0; z-index: 0; background-color: black;"></div></vturb-smartplayer> <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/aef7770b-d8e8-4e9a-91cf-fa43a6a3e23d/players/6aa0a0a396f385954ead70c1/v4/player.js", s.async=!0,document.head.appendChild(s); </script>
+  /* FUNDO ALTERNADO */
+  .fundo-branco{background:var(--branco)}
+  .fundo-verde{
+    background:linear-gradient(180deg,var(--verde-mata),#24492E);
+    color:#EAF3EC;
+  }
+  .fundo-verde .capitulo h2{color:var(--banana-claro)}
+  .fundo-verde .capitulo p{color:#CFE0D4}
+  .fundo-verde .capitulo strong{color:var(--banana)}
+  .fundo-verde .capitulo-num{color:var(--banana-claro)}
+  .fundo-verde .fala{background:rgba(255,255,255,.08);color:#EAF3EC;border-left-color:var(--banana)}
+  .fundo-verde .fala .quem{color:var(--banana-claro)}
+
+  /* ÁRVORE GENEALÓGICA */
+  .arvore{
+    background:#fff;border-radius:24px;padding:44px 28px;
+    box-shadow:var(--sombra);text-align:center;
+  }
+  .arvore h3{
+    font-size:1.5rem;color:var(--verde-mata);margin-bottom:8px;
+  }
+  .arvore .sub{
+    font-family:'Segoe UI',Arial,sans-serif;font-size:.85rem;
+    color:var(--cinza);margin-bottom:34px;
+  }
+  .arvore-linha{
+    display:flex;justify-content:center;align-items:center;
+    gap:28px;flex-wrap:wrap;margin-bottom:8px;
+  }
+  .arvore-pessoa{
+    text-align:center;width:150px;
+  }
+  .arvore-pessoa svg{width:100%;height:auto}
+  .arvore-pessoa .n{
+    font-family:'Segoe UI',Arial,sans-serif;font-weight:800;
+    font-size:.85rem;color:var(--verde-mata);margin-top:6px;
+  }
+  .arvore-pessoa .e{
+    font-family:'Segoe UI',Arial,sans-serif;font-size:.72rem;color:var(--cinza);
+  }
+  .mais{
+    font-size:2.4rem;color:var(--banana);font-weight:900;
+    font-family:'Segoe UI',Arial,sans-serif;
+  }
+  .arvore-seta{
+    font-size:2rem;color:var(--verde-claro);margin:14px 0;
+  }
+  .arvore-filho{
+    display:inline-block;background:rgba(244,196,48,.18);
+    border:3px solid var(--banana);border-radius:24px;
+    padding:20px 34px;
+  }
+  .arvore-filho svg{width:130px;height:auto}
+
+  /* LINHA DO TEMPO */
+  .timeline{
+    position:relative;max-width:720px;margin:0 auto;
+    padding-left:36px;
+  }
+  .timeline::before{
+    content:"";position:absolute;left:9px;top:10px;bottom:10px;
+    width:3px;background:linear-gradient(180deg,var(--banana),var(--verde-claro));
+    border-radius:3px;
+  }
+  .tl-item{
+    position:relative;margin-bottom:36px;
+  }
+  .tl-item::before{
+    content:"";position:absolute;left:-33px;top:8px;
+    width:15px;height:15px;border-radius:50%;
+    background:var(--banana);border:3px solid var(--areia);
+    box-shadow:0 0 0 3px var(--banana);
+  }
+  .fundo-branco .tl-item::before{border-color:var(--branco)}
+  .tl-item .ano{
+    font-family:'Segoe UI',Arial,sans-serif;font-size:.75rem;
+    font-weight:800;letter-spacing:2px;text-transform:uppercase;
+    color:var(--banana);display:block;margin-bottom:4px;
+  }
+  .tl-item h4{
+    font-size:1.15rem;color:var(--verde-mata);margin-bottom:6px;
+  }
+  .fundo-verde .tl-item h4{color:var(--banana-claro)}
+  .tl-item p{
+    font-size:.98rem;color:var(--cinza);margin:0;
+  }
+  .fundo-verde .tl-item p{color:#B9CFC0}
+  .fundo-verde .timeline::before{background:linear-gradient(180deg,var(--banana-claro),#4E8A5E)}
+
+  /* MORAL */
+  .moral{
+    background:var(--banana);
+    border-radius:24px;padding:44px 34px;text-align:center;
+    box-shadow:0 14px 40px rgba(244,196,48,.35);
+  }
+  .moral .emoji{font-size:3rem;display:block;margin-bottom:16px}
+  .moral h3{
+    font-size:1.7rem;color:#2E5D3A;margin-bottom:16px;font-weight:900;
+  }
+  .moral p{
+    font-size:1.1rem;color:#3B4A2E;max-width:620px;
+    margin:0 auto 14px;
+  }
+  .moral .assinatura{
+    font-family:'Segoe UI',Arial,sans-serif;font-size:.82rem;
+    color:#5A6B44;margin-top:24px;font-weight:700;
+    letter-spacing:1px;text-transform:uppercase;
+  }
+
+  /* FICHA DOS PERSONAGENS */
+  .fichas{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:24px;
+  }
+  .ficha{
+    background:#fff;border-radius:20px;padding:30px;
+    box-shadow:var(--sombra);border-top:5px solid var(--verde-claro);
+  }
+  .ficha.rosa{border-top-color:var(--rosa)}
+  .ficha.amarela{border-top-color:var(--banana)}
+  .ficha h4{
+    font-size:1.25rem;color:var(--verde-mata);margin-bottom:4px;
+  }
+  .ficha .apelido{
+    font-family:'Segoe UI',Arial,sans-serif;font-size:.8rem;
+    color:var(--cinza);margin-bottom:16px;font-style:italic;
+  }
+  .ficha ul{list-style:none;font-size:.94rem}
+  .ficha ul li{
+    padding:8px 0;border-bottom:1px dashed var(--areia-escura);
+    color:#4A443E;
+  }
+  .ficha ul li:last-child{border-bottom:none}
+  .ficha ul li strong{
+    color:var(--verde-mata);font-family:'Segoe UI',Arial,sans-serif;
+    font-size:.82rem;text-transform:uppercase;letter-spacing:.5px;
+  }
+
+  /* CTA */
+  .cta{
+    background:var(--verde-mata);color:#fff;text-align:center;
+    padding:70px 24px;
+  }
+  .cta h2{
+    font-size:2.1rem;color:var(--banana-claro);margin-bottom:14px;
+  }
+  .cta p{
+    color:#CFE0D4;max-width:600px;margin:0 auto 30px;font-size:1.05rem;
+  }
+  .cta .btn{
+    display:inline-block;background:var(--banana);color:#2E5D3A;
+    padding:16px 44px;border-radius:50px;font-weight:900;
+    text-decoration:none;font-size:1rem;
+    font-family:'Segoe UI',Arial,sans-serif;
+    box-shadow:0 10px 30px rgba(244,196,48,.4);
+    transition:transform .2s;
+  }
+  .cta .btn:hover{transform:translateY(-3px) scale(1.03)}
+
+  /* FOOTER */
+  footer{
+    background:#1F3D27;color:#9DB8A5;padding:50px 24px 30px;
+    font-family:'Segoe UI',Arial,sans-serif;font-size:.88rem;
+  }
+  .footer-container{max-width:820px;margin:0 auto;text-align:center}
+  .footer-container .logo-footer{
+    font-size:1.1rem;font-weight:900;color:var(--banana);
+    margin-bottom:16px;letter-spacing:.5px;
+  }
+  .footer-container p{margin-bottom:12px;line-height:1.7}
+  .footer-aviso{
+    border:1px dashed rgba(244,196,48,.45);border-radius:12px;
+    padding:16px 20px;margin-top:22px;color:var(--banana-claro);
+    font-size:.82rem;
+  }
+  .footer-bottom{
+    max-width:820px;margin:28px auto 0;border-top:1px solid #2E5D3A;
+    padding-top:20px;display:flex;justify-content:space-between;
+    flex-wrap:wrap;gap:10px;font-size:.76rem;color:#7A9683;
+  }
+
+  @media(max-width:760px){
+    .hero h1{font-size:2rem}
+    .capitulo h2{font-size:1.6rem}
+    nav ul{display:none}
+    .retrato-box{width:140px}
+    .retrato-box.destaque{transform:scale(1.04)}
+    .moral h3{font-size:1.3rem}
+    .cta h2{font-size:1.5rem}
+  }
+</style>
+</head>
+<body>
+
+<!-- FAIXA DEMO -->
+<div class="demo-banner">
+  <span>DEMO</span> Página fictícia para teste de cloaker. Conto inventado — nada aqui é real e nenhum dado é coletado.
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-container">
+    <a href="#" class="logo">
+      <svg viewBox="0 0 200 200" aria-hidden="true">
+        <ellipse cx="100" cy="105" rx="62" ry="66" fill="#5D4037"/>
+        <circle cx="42" cy="100" r="22" fill="#8D6E63"/>
+        <circle cx="158" cy="100" r="22" fill="#8D6E63"/>
+        <path d="M65 50 Q80 30 100 44 Q120 30 135 50" fill="#5D4037"/>
+        <ellipse cx="100" cy="126" rx="42" ry="34" fill="#C68642"/>
+        <circle cx="80" cy="96" r="8" fill="#2B1B12"/>
+        <circle cx="120" cy="96" r="8" fill="#2B1B12"/>
+        <path d="M84 138 Q100 152 116 138" stroke="#2B1B12" stroke-width="5" fill="none" stroke-linecap="round"/>
+      </svg>
+      Contos do Marceloxz
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#cap1">A História</a></li>
+        <li><a href="#arvore">Família</a></li>
+        <li><a href="#moral">Moral</a></li>
+      </ul>
+    </nav>
+    <a href="#inicio" class="btn-header">Ler o conto</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-selo">✦ Conto Ilustrado ✦</div>
+  <h1>A Incrível História de <em>Marceloxz</em>, <em>Raquel</em> e o pequeno <em>João Pedro</em></h1>
+  <p class="subtitulo">
+    Uma fábula moderna sobre amor, diferenças e o poder de um abraço — contada em três atos,
+    do jeitinho que merece ser contada.
+  </p>
+
+  <div class="hero-aviso">
+    <strong>Aviso:</strong> este conto é <strong>100% fictício e inventado</strong> para esta demonstração.
+    Marceloxz, Raquel e João Pedro são personagens de faz de conta, criados apenas para dar vida a esta página.
+    Nenhum animal real foi envolvido, e nada aqui deve ser levado a sério. 😄
+  </div>
+
+  <div class="trio">
+    <!-- MARCELOXZ -->
+    <div class="retrato-box">
+      <svg viewBox="0 0 200 200" class="retrato" aria-label="Ilustração de Marceloxz">
+        <circle cx="34" cy="96" r="26" fill="#8D5524"/>
+        <circle cx="166" cy="96" r="26" fill="#8D5524"/>
+        <circle cx="34" cy="96" r="14" fill="#C68642"/>
+        <circle cx="166" cy="96" r="14" fill="#C68642"/>
+        <ellipse cx="100" cy="100" rx="68" ry="72" fill="#6B4226"/>
+        <path d="M58 46 Q70 20 86 42 Q100 12 114 42 Q130 20 142 46" fill="#6B4226"/>
+        <ellipse cx="100" cy="126" rx="46" ry="38" fill="#C68642"/>
+        <circle cx="78" cy="90" r="9" fill="#2B1B12"/>
+        <circle cx="122" cy="90" r="9" fill="#2B1B12"/>
+        <circle cx="81" cy="87" r="3" fill="#fff"/>
+        <circle cx="125" cy="87" r="3" fill="#fff"/>
+        <path d="M66 74 Q78 68 90 74" stroke="#2B1B12" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <path d="M110 74 Q122 68 134 74" stroke="#2B1B12" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <ellipse cx="94" cy="118" rx="5" ry="4" fill="#2B1B12"/>
+        <ellipse cx="106" cy="118" rx="5" ry="4" fill="#2B1B12"/>
+        <path d="M80 136 Q100 152 120 136" stroke="#2B1B12" stroke-width="5" fill="none" stroke-linecap="round"/>
+      </svg>
+      <div class="nome">Marceloxz</div>
+      <div class="papel">O chimpanzé sonhador</div>
     </div>
 
-    <!-- BLOCO DO PRODUTO | revelado após 3406s de vídeo -->
-    <div class="esconder buybox">
-      <div class="esconder">
-<style>
-  .esconder{margin:0 -16px;font-family:Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:#111;-webkit-font-smoothing:antialiased}
-  .esconder *,.esconder *::before,.esconder *::after{margin:0;padding:0;box-sizing:border-box}
-  .esconder img{display:block;max-width:100%}
-  .jf-secure{margin-top:2px;padding:16px 14px;background:#3d3d3d;color:#f4d11e;font-weight:800;text-align:center}
-  .jf-secure .l1{font-size:22px;line-height:1.18}
-  .jf-secure .l2{margin-top:2px;font-size:18px}
-  .jf-timer{margin-top:6px;color:#fff;font-size:52px;line-height:1.05;letter-spacing:1px;font-variant-numeric:tabular-nums}
-  .jf-plans{padding:16px;background:#e7e7e7}
-  .jf-col{display:flex;flex-direction:column;gap:18px;max-width:440px;margin:0 auto}
-  .jf-kit{display:block;color:inherit;text-decoration:none}
-  .jf-ribbon{display:block;padding:8px 10px;border:3px solid #000;border-bottom:0;border-radius:16px 16px 0 0;background:#d9534f;color:#fff;font-size:16px;font-weight:800;letter-spacing:.4px;text-align:center;text-transform:uppercase}
-  .jf-card{padding:14px;border:2px solid #bcbcbc;border-radius:18px;background:#fff}
-  .is-best .jf-card{border:3px solid #000;border-top:0;border-radius:0 0 16px 16px;background:linear-gradient(180deg,#fdf6de,#f6e8bf)}
-  .jf-grid{display:grid;grid-template-columns:45fr 55fr;gap:10px;align-items:center}
-  .jf-left{display:flex;flex-direction:column;align-items:center;min-width:0;text-align:center}
-  .jf-qty{font-size:24px;font-weight:800;line-height:1.05}
-  .jf-supply{margin-top:2px;color:#555;font-size:14px}
-  .jf-img{width:100%;margin:8px auto 6px}
-  .jf-kit:nth-child(2) .jf-img{max-width:75%}
-  .jf-kit:nth-child(3) .jf-img{max-width:45%}
-  .jf-total{margin-top:auto;padding-top:4px;white-space:nowrap}
-  .jf-total s{color:#8a8a8a;font-size:14px;font-weight:600}
-  .jf-total b{margin-left:5px;font-size:19px;font-weight:900}
-  .jf-right{display:flex;flex-direction:column;min-width:0}
-  .jf-price{display:flex;align-items:flex-start;justify-content:center;margin-bottom:8px;font-weight:900;line-height:1}
-  .jf-price .cur{margin-top:6px;font-size:24px}
-  .jf-price .num{font-size:56px;line-height:.9}
-  .jf-price .per{align-self:flex-end;margin:0 0 9px 3px;color:#333;font-size:12px;font-weight:700}
-  .jf-pills{display:flex;flex-direction:column;gap:6px;margin-bottom:10px}
-  .jf-pill{display:flex;align-items:center;gap:6px;padding:7px 9px;border-radius:7px;background:var(--c,#111);color:#fff;font-size:14px;font-weight:800;line-height:1.1}
-  .jf-pill svg{width:16px;height:16px;flex:none;color:var(--c,#111)}
-  .jf-ship{margin-bottom:10px;font-size:13px;font-style:italic;text-align:center}
-  .jf-btn{position:relative;display:flex;align-items:center;justify-content:center;gap:8px;padding:14px;border:1px solid #b0b0b0;border-radius:10px;background:linear-gradient(180deg,#f4f4f4,#c9c9c9);box-shadow:0 5px 0 #a9a9a9,0 8px 14px rgba(0,0,0,.25);color:#000;font-size:20px;font-weight:800}
-  .is-best .jf-btn{border-color:#d99e00;background:linear-gradient(180deg,#fcd968,#f2b30a);box-shadow:0 5px 0 #c68a08,0 8px 14px rgba(0,0,0,.3)}
-  .jf-btn svg{width:20px;height:20px;flex:none}
-  .jf-point{position:absolute;right:-2px;bottom:-10px;font-size:36px;line-height:1;pointer-events:none;filter:drop-shadow(0 3px 2px rgba(0,0,0,.3));animation:jf-poke 1.6s ease-in-out infinite}
-  .jf-pay{display:flex;justify-content:center;gap:5px;margin-top:12px}
-  .jf-pay>span{display:flex;flex:1;align-items:center;justify-content:center;min-width:0;max-width:42px;height:26px;overflow:hidden;border:1px solid #ddd;border-radius:4px;background:#fff}
-  .jf-pay svg{width:30px;height:19px}
-  .jf-pay .visa{color:#1a1f71;font-size:13px;font-style:italic;font-weight:900;letter-spacing:-.5px}
-  .jf-pay .disc{color:#4d4d4d;font-size:8px;font-weight:900;letter-spacing:-.2px}
-  .jf-pay .disc i{width:5px;height:5px;margin:0 .5px;border-radius:50%;background:#f76b1c}
-  .jf-pay .amex{color:#006fcf;font-size:11px;font-weight:800;letter-spacing:-.3px}
-  @keyframes jf-poke{50%{transform:translateX(-9px)}}
-  @media (prefers-reduced-motion:reduce){.jf-point{animation:none}}
-</style>
+    <!-- RAQUEL -->
+    <div class="retrato-box destaque">
+      <svg viewBox="0 0 200 200" class="retrato" aria-label="Ilustração de Raquel">
+        <ellipse cx="100" cy="100" rx="72" ry="76" fill="#3B2A20"/>
+        <path d="M55 42 Q75 18 100 34 Q125 18 145 42" fill="#3B2A20"/>
+        <path d="M40 82 Q100 56 160 82" fill="#4A362A"/>
+        <circle cx="78" cy="94" r="8" fill="#1A1210"/>
+        <circle cx="122" cy="94" r="8" fill="#1A1210"/>
+        <circle cx="81" cy="91" r="2.5" fill="#fff"/>
+        <circle cx="125" cy="91" r="2.5" fill="#fff"/>
+        <path d="M62 77 Q100 69 138 77" stroke="#1A1210" stroke-width="8" fill="none" stroke-linecap="round"/>
+        <ellipse cx="100" cy="132" rx="44" ry="34" fill="#5C4436"/>
+        <ellipse cx="90" cy="126" rx="6" ry="8" fill="#1A1210"/>
+        <ellipse cx="110" cy="126" rx="6" ry="8" fill="#1A1210"/>
+        <path d="M80 144 Q100 160 120 144" stroke="#1A1210" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <path d="M152 54 l-16 -10 v20 z" fill="#E91E63"/>
+        <path d="M152 54 l16 -10 v20 z" fill="#E91E63"/>
+        <circle cx="152" cy="54" r="6" fill="#F06292"/>
+      </svg>
+      <div class="nome">Raquel</div>
+      <div class="papel">A gorila de coração enorme</div>
+    </div>
 
-<svg style="display:none">
-  <symbol id="jf-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#fff"></circle><path d="M7.5 12.4l3 3 6-6.6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path></symbol>
-  <symbol id="jf-cart" viewBox="0 0 576 512"><path fill="currentColor" d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 320c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></symbol>
-  <symbol id="jf-mc" viewBox="0 0 48 30"><circle cx="19" cy="15" r="9" fill="#eb001b"></circle><circle cx="29" cy="15" r="9" fill="#f79e1b"></circle><path d="M24 8a9 9 0 0 0 0 14 9 9 0 0 0 0-14z" fill="#ff5f00"></path></symbol>
-</svg>
-
-<div class="jf-secure">
-  <div class="l1">Secure your discounted Stallion Power now</div>
-  <div class="l2">Only while supplies last!</div>
-  <div class="jf-timer" id="jf-timer">19:59</div>
-</div>
-
-<div class="jf-plans">
-  <div class="jf-col">
-
-    <a class="jf-kit is-best" href="https://lp.willapurehealthchronicle.com/click/1?utm_source=facebook&amp;utm_medium=bl17+-+ed+-+cbo+-+bid-1-100+-+07%2F09+-+conj98+-+c1+amaterasu&amp;utm_campaign=%5BBL17%5D+-+%5BED%5D+-+%5BCBO%5D+-+%5BBID-1-100%5D+-+%5BVID%5D+-+%5BPRE%5D+-+%5B07%2F09%5D+-+C1+Amaterasu&amp;utm_content=bl17+-+ed+-+cbo+-+bid-1-100+-+vid+-+07%2F09+-+conj98+-+1.27+c1+amaterasu&amp;utm_term=Instagram_Stories&amp;rtkcid=6aa169dea253b2ff0490d7ec&amp;rtkcmpid=6a96209ed67725699f82871d">
-      <span class="jf-ribbon">Most popular!</span>
-      <div class="jf-card">
-        <div class="jf-grid">
-          <div class="jf-left">
-            <div class="jf-qty">6 BOTTLES</div>
-            <div class="jf-supply">180-Day Supply</div>
-            <img class="jf-img" src="images/zLqboB8176610.webp" alt="6 bottles of Stallion Power">
-            <div class="jf-total"><s>$1074</s> <b>$294</b></div>
-          </div>
-          <div class="jf-right">
-            <div class="jf-price"><span class="cur">$</span><span class="num">49</span><span class="per">/BOTTLE</span></div>
-            <div class="jf-pills">
-              <span class="jf-pill" style="--c:#d9534f"><svg aria-hidden="true"><use href="#jf-check"></use></svg>VIP Support</span>
-              <span class="jf-pill"><svg aria-hidden="true"><use href="#jf-check"></use></svg>FREE BONUS!</span>
-              <span class="jf-pill" style="--c:#579d6b"><svg aria-hidden="true"><use href="#jf-check"></use></svg>Free Shipping</span>
-            </div>
-            <span class="jf-btn">Buy Now<svg aria-hidden="true"><use href="#jf-cart"></use></svg><span class="jf-point" aria-hidden="true">👈🏻</span></span>
-            <div class="jf-pay">
-              <span class="visa">VISA</span>
-              <span><svg aria-hidden="true"><use href="#jf-mc"></use></svg></span>
-              <span class="disc">DISC<i></i>VER</span>
-              <span class="amex">AMEX</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </a>
-
-    <a class="jf-kit" href="https://lp.willapurehealthchronicle.com/click/2?utm_source=facebook&amp;utm_medium=bl17+-+ed+-+cbo+-+bid-1-100+-+07%2F09+-+conj98+-+c1+amaterasu&amp;utm_campaign=%5BBL17%5D+-+%5BED%5D+-+%5BCBO%5D+-+%5BBID-1-100%5D+-+%5BVID%5D+-+%5BPRE%5D+-+%5B07%2F09%5D+-+C1+Amaterasu&amp;utm_content=bl17+-+ed+-+cbo+-+bid-1-100+-+vid+-+07%2F09+-+conj98+-+1.27+c1+amaterasu&amp;utm_term=Instagram_Stories&amp;rtkcid=6aa169dea253b2ff0490d7ec&amp;rtkcmpid=6a96209ed67725699f82871d">
-      <div class="jf-card">
-        <div class="jf-grid">
-          <div class="jf-left">
-            <div class="jf-qty">3 BOTTLES</div>
-            <div class="jf-supply">90-Day Supply</div>
-            <img class="jf-img" src="images/GWvBbA8028958.webp" alt="3 bottles of Stallion Power">
-            <div class="jf-total"><s>$537</s> <b>$177</b></div>
-          </div>
-          <div class="jf-right">
-            <div class="jf-price"><span class="cur">$</span><span class="num">59</span><span class="per">/BOTTLE</span></div>
-            <div class="jf-pills">
-              <span class="jf-pill"><svg aria-hidden="true"><use href="#jf-check"></use></svg>FREE BONUS!</span>
-              <span class="jf-pill" style="--c:#579d6b"><svg aria-hidden="true"><use href="#jf-check"></use></svg>Free Shipping</span>
-            </div>
-            <span class="jf-btn">Buy Now<svg aria-hidden="true"><use href="#jf-cart"></use></svg></span>
-            <div class="jf-pay">
-              <span class="visa">VISA</span>
-              <span><svg aria-hidden="true"><use href="#jf-mc"></use></svg></span>
-              <span class="disc">DISC<i></i>VER</span>
-              <span class="amex">AMEX</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </a>
-
-    <a class="jf-kit" href="https://lp.willapurehealthchronicle.com/click/3?utm_source=facebook&amp;utm_medium=bl17+-+ed+-+cbo+-+bid-1-100+-+07%2F09+-+conj98+-+c1+amaterasu&amp;utm_campaign=%5BBL17%5D+-+%5BED%5D+-+%5BCBO%5D+-+%5BBID-1-100%5D+-+%5BVID%5D+-+%5BPRE%5D+-+%5B07%2F09%5D+-+C1+Amaterasu&amp;utm_content=bl17+-+ed+-+cbo+-+bid-1-100+-+vid+-+07%2F09+-+conj98+-+1.27+c1+amaterasu&amp;utm_term=Instagram_Stories&amp;rtkcid=6aa169dea253b2ff0490d7ec&amp;rtkcmpid=6a96209ed67725699f82871d">
-      <div class="jf-card">
-        <div class="jf-grid">
-          <div class="jf-left">
-            <div class="jf-qty">1 BOTTLE</div>
-            <div class="jf-supply">30-Day Supply</div>
-            <img class="jf-img" src="images/kEkgMI4209315.png" alt="1 bottle of Stallion Power">
-            <div class="jf-total"><s>$179</s> <b>$69</b></div>
-          </div>
-          <div class="jf-right">
-            <div class="jf-price"><span class="cur">$</span><span class="num">69</span><span class="per">/BOTTLE</span></div>
-            <div class="jf-ship">+ $9.99 Shipping</div>
-            <span class="jf-btn">Buy Now<svg aria-hidden="true"><use href="#jf-cart"></use></svg></span>
-            <div class="jf-pay">
-              <span class="visa">VISA</span>
-              <span><svg aria-hidden="true"><use href="#jf-mc"></use></svg></span>
-              <span class="disc">DISC<i></i>VER</span>
-              <span class="amex">AMEX</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </a>
-
+    <!-- JOÃO PEDRO -->
+    <div class="retrato-box">
+      <svg viewBox="0 0 200 200" class="retrato" aria-label="Ilustração de João Pedro">
+        <circle cx="42" cy="102" r="20" fill="#8D6E63"/>
+        <circle cx="158" cy="102" r="20" fill="#8D6E63"/>
+        <ellipse cx="100" cy="102" rx="62" ry="64" fill="#5D4037"/>
+        <path d="M65 50 Q80 28 100 42 Q120 28 135 50" fill="#5D4037"/>
+        <path d="M48 84 Q100 64 152 84" fill="#6D4C41"/>
+        <ellipse cx="100" cy="124" rx="42" ry="34" fill="#A1887F"/>
+        <circle cx="80" cy="96" r="8" fill="#2B1B12"/>
+        <circle cx="120" cy="96" r="8" fill="#2B1B12"/>
+        <circle cx="83" cy="93" r="2.5" fill="#fff"/>
+        <circle cx="123" cy="93" r="2.5" fill="#fff"/>
+        <path d="M68 82 Q80 76 92 82" stroke="#2B1B12" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <path d="M108 82 Q120 76 132 82" stroke="#2B1B12" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <ellipse cx="94" cy="118" rx="4.5" ry="3.5" fill="#2B1B12"/>
+        <ellipse cx="106" cy="118" rx="4.5" ry="3.5" fill="#2B1B12"/>
+        <path d="M84 134 Q100 148 116 134" stroke="#2B1B12" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <ellipse cx="100" cy="158" rx="16" ry="12" fill="#F4C430"/>
+        <ellipse cx="100" cy="162" rx="10" ry="7" fill="#E0A800"/>
+      </svg>
+      <div class="nome">João Pedro</div>
+      <div class="papel">O filhote de dois mundos</div>
+    </div>
   </div>
-</div>
+</section>
+
+<!-- CAPÍTULO 1 -->
+<section class="fundo-branco" id="cap1">
+  <div class="container capitulo">
+    <span class="capitulo-num">Primeiro Ato</span>
+    <h2>O chimpanzé que colecionava manhãs</h2>
+
+    <p class="lead">
+      Marceloxz não era um chimpanzé comum. Enquanto os outros passavam o dia pulando de galho em galho,
+      ele ficava sentado na pedra mais alta da floresta, olhando o sol nascer como quem assiste a um filme.
+    </p>
+
+    <p>
+      Ele morava numa clareira chamada <strong>Vale das Bananas Tortas</strong>, um lugar onde as frutas cresciam
+      com formatos esquisitos e ninguém se importava com isso. Marceloxz tinha um caderninho feito de folhas
+      costuradas com cipó, onde anotava tudo o que achava bonito: o barulho da chuva, o cheiro de terra molhada,
+      e a cor exata do céu às seis e doze da manhã.
+    </p>
+
+    <p>
+      Os outros chimpanzés riam dele. Diziam que pensar demais dava dor de cabeça. Marceloxz só dava de ombros,
+      guardava o caderno debaixo do braço e continuava anotando.
+    </p>
+
+    <div class="fala">
+      Um dia eu vou encontrar alguém que também acha o céu das seis e doze a coisa mais bonita do mundo.
+      <span class="quem">— Marceloxz, para ninguém em particular</span>
+    </div>
+
+    <p>
+      Ele não sabia, mas estava certo. Só não imaginava que essa alguém viria de um lugar
+      completamente diferente — e que seria <strong>duas vezes maior que ele</strong>.
+    </p>
+  </div>
+</section>
+
+<div class="divisor">· · ·</div>
+
+<!-- CAPÍTULO 2 -->
+<section id="cap2">
+  <div class="container capitulo">
+    <span class="capitulo-num">Segundo Ato</span>
+    <h2>Raquel, a gorila que não tinha pressa</h2>
+
+    <p class="lead">
+      Do outro lado da floresta, numa montanha chamada <strong>Serra do Silêncio</strong>, vivia Raquel.
+      Ela era uma gorila grande, forte e absolutamente tranquila.
+    </p>
+
+    <p>
+      Raquel tinha um jeito peculiar de resolver problemas: ela não resolvia. Ela sentava, respirava e esperava
+      o problema se cansar e ir embora sozinho. Funcionava quase sempre.
+    </p>
+
+    <p>
+      Ela também gostava de coisas simples. Gostava de amassar folhas entre os dedos para sentir a textura.
+      Gostava de observar formigas trabalhando. E gostava, acima de tudo, de <strong>silêncio</strong> —
+      aquele silêncio bom, de fim de tarde, quando o mundo parece que baixou o volume.
+    </p>
+
+    <div class="fala">
+      Barulho demais não deixa a gente ouvir o que importa.
+      <span class="quem">— Raquel, provavelmente</span>
+    </div>
+
+    <p>
+      Acontece que Raquel também estava sozinha. Não por falta de opção, mas porque ninguém tinha paciência
+      para acompanhar o ritmo dela. Todo mundo queria correr. Ela queria caminhar.
+    </p>
+  </div>
+</section>
+
+<div class="divisor">· · ·</div>
+
+<!-- CAPÍTULO 3 -->
+<section class="fundo-verde">
+  <div class="container capitulo">
+    <span class="capitulo-num">Terceiro Ato</span>
+    <h2>O encontro no rio de pedra</h2>
+
+    <p class="lead">
+      Eles se conheceram num lugar onde ninguém costumava ir: um rio que tinha parado de correr
+      e virado um caminho de pedras redondas.
+    </p>
+
+    <p>
+      Marceloxz estava lá porque queria anotar a cor das pedras molhadas. Raquel estava lá porque
+      queria ficar em silêncio num lugar novo.
+    </p>
+
+    <p>
+      Ficaram os dois parados, um de cada lado, por uns dez minutos. Nenhum dos dois sabia como começar.
+    </p>
+
+    <div class="fala">
+      Você também veio ver as pedras?
+      <span class="quem">— Marceloxz, com a voz um pouco mais fina que o normal</span>
+    </div>
+
+    <div class="fala">
+      Vim ver o silêncio. Mas as pedras servem.
+      <span class="quem">— Raquel, sem tirar os olhos do horizonte</span>
+    </div>
+
+    <p>
+      Marceloxz achou aquela resposta a coisa mais interessante que já tinha ouvido. Raquel achou
+      engraçado o jeito que ele segurava o caderninho, como se fosse ouro.
+    </p>
+
+    <p>
+      Eles conversaram até o sol ficar laranja. Falaram sobre bananas tortas e sobre montanhas calmas.
+      Falaram sobre o barulho que a floresta faz de madrugada. E, quando perceberam, já estavam
+      sentados na mesma pedra, um do lado do outro.
+    </p>
+
+    <div class="cena">
+      <svg viewBox="0 0 500 260" aria-label="Marceloxz e Raquel sentados na pedra ao pôr do sol">
+        <!-- céu -->
+        <defs>
+          <linearGradient id="ceu" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#FFB74D"/>
+            <stop offset="55%" stop-color="#FF8A65"/>
+            <stop offset="100%" stop-color="#6D4C41"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="500" height="260" fill="url(#ceu)" rx="18"/>
+        <!-- sol -->
+        <circle cx="250" cy="150" r="46" fill="#FFE082" opacity="0.9"/>
+        <!-- montanhas -->
+        <path d="M0 190 L110 120 L200 190 Z" fill="#4E342E" opacity="0.75"/>
+        <path d="M280 190 L400 110 L500 190 Z" fill="#3E2723" opacity="0.8"/>
+        <!-- chão -->
+        <rect x="0" y="188" width="500" height="72" fill="#3E2723" rx="0"/>
+        <!-- pedra -->
+        <ellipse cx="250" cy="205" rx="105" ry="26" fill="#5D4037"/>
+        <ellipse cx="250" cy="199" rx="98" ry="20" fill="#6D4C41"/>
+        <!-- Marceloxz pequeno -->
+        <g transform="translate(198,160)">
+          <ellipse cx="0" cy="20" rx="26" ry="24" fill="#6B4226"/>
+          <circle cx="-10" cy="14" r="4" fill="#2B1B12"/>
+          <circle cx="10" cy="14" r="4" fill="#2B1B12"/>
+          <ellipse cx="0" cy="28" rx="16" ry="12" fill="#C68642"/>
+          <path d="M-8 34 Q0 40 8 34" stroke="#2B1B12" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        </g>
+        <!-- Raquel grande -->
+        <g transform="translate(310,148)">
+          <ellipse cx="0" cy="28" rx="40" ry="38" fill="#3B2A20"/>
+          <ellipse cx="0" cy="12" rx="36" ry="10" fill="#4A362A"/>
+          <circle cx="-13" cy="22" r="5" fill="#1A1210"/>
+          <circle cx="13" cy="22" r="5" fill="#1A1210"/>
+          <ellipse cx="0" cy="42" rx="24" ry="18" fill="#5C4436"/>
+          <path d="M-11 50 Q0 58 11 50" stroke="#1A1210" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M30 6 l-11 -7 v14 z" fill="#E91E63"/>
+          <path d="M30 6 l11 -7 v14 z" fill="#E91E63"/>
+        </g>
+        <!-- coração -->
+        <path d="M250 105 c-8 -10 -22 -6 -22 5 c0 10 14 18 22 24 c8 -6 22 -14 22 -24 c0 -11 -14 -15 -22 -5 z" fill="#E91E63" opacity="0.9"/>
+      </svg>
+      <div class="legenda">Ilustração do conto — “o encontro no rio de pedra”.</div>
+    </div>
+  </div>
+</section>
+
+<div class="divisor">· · ·</div>
+
+<!-- CAPÍTULO 4 -->
+<section class="fundo-branco">
+  <div class="container capitulo">
+    <span class="capitulo-num">Quarto Ato</span>
+    <h2>Uma família fora dos padrões</h2>
+
+    <p class="lead">
+      O tempo passou do jeito que o tempo passa: sem pedir licença.
+    </p>
+
+    <p>
+      Marceloxz e Raquel começaram a morar juntos numa caverna arejada, no meio do caminho entre
+      o Vale das Bananas Tortas e a Serra do Silêncio. Cada um fazia do seu jeito, e era exatamente
+      isso que dava certo.
+    </p>
+
+    <p>
+      Marceloxz anotava tudo no caderninho. Raquel ficava em silêncio ao lado dele, olhando.
+      Ele falava muito. Ela falava pouco. Os dois se entendiam perfeitamente.
+    </p>
+
+    <p>
+      Foi então que a notícia chegou: <strong>Raquel estava esperando um filhote</strong>.
+    </p>
+
+    <p>
+      A floresta inteira comentou. Uns acharam estranho. Outros acharam bonito. A maioria só queria
+      saber como seria o bebê — afinal, chimpanzé com gorila não era coisa que se visse todo dia.
+    </p>
+
+    <div class="fala">
+      E se ele não parecer com nenhum de nós dois?
+      <span class="quem">— Marceloxz, preocupado, numa noite de chuva</span>
+    </div>
+
+    <div class="fala">
+      Então ele vai parecer com ele mesmo. Já é o suficiente.
+      <span class="quem">— Raquel, com a paciência de sempre</span>
+    </div>
+
+    <p>
+      Marceloxz ficou quieto por um momento. Depois pegou o caderninho e escreveu essa frase.
+      Foi a anotação mais bonita que ele já tinha feito.
+    </p>
+  </div>
+</section>
+
+<div class="divisor">· · ·</div>
+
+<!-- CAPÍTULO 5 -->
+<section id="cap5">
+  <div class="container capitulo">
+    <span class="capitulo-num">Quinto Ato</span>
+    <h2>João Pedro</h2>
+
+    <p class="lead">
+      Ele nasceu numa manhã de neblina, exatamente às seis e doze.
+    </p>
+
+    <p>
+      Marceloxz percebeu a hora e sorriu, porque era <strong>a hora do céu mais bonito</strong> —
+      aquela que ele anotava no caderno desde antes de conhecer Raquel.
+    </p>
+
+    <p>
+      João Pedro veio ao mundo com o rosto largo da mãe, o topete bagunçado do pai e um olhar
+      curioso que parecia já querer entender tudo. Pesava mais que o normal. Chorava menos que o esperado.
+      E, nos primeiros dias, dormia abraçado a um cacho de banana que Marceloxz tinha colocado
+      do lado dele “só por garantia”.
+    </p>
+
+    <div class="cena">
+      <svg viewBox="0 0 420 300" aria-label="João Pedro bebê no colo dos pais">
+        <rect x="0" y="0" width="420" height="300" fill="#FFF8E1" rx="18"/>
+        <!-- pais ao fundo -->
+        <g opacity="0.9">
+          <ellipse cx="110" cy="150" rx="52" ry="54" fill="#6B4226"/>
+          <circle cx="92" cy="142" r="7" fill="#2B1B12"/>
+          <circle cx="128" cy="142" r="7" fill="#2B1B12"/>
+          <ellipse cx="110" cy="176" rx="32" ry="26" fill="#C68642"/>
+          <path d="M96 186 Q110 198 124 186" stroke="#2B1B12" stroke-width="4" fill="none" stroke-linecap="round"/>
+        </g>
+        <g opacity="0.9">
+          <ellipse cx="310" cy="146" rx="60" ry="62" fill="#3B2A20"/>
+          <path d="M262 118 Q310 100 358 118" fill="#4A362A"/>
+          <circle cx="292" cy="140" r="7" fill="#1A1210"/>
+          <circle cx="328" cy="140" r="7" fill="#1A1210"/>
+          <ellipse cx="310" cy="176" rx="36" ry="28" fill="#5C4436"/>
+          <path d="M296 188 Q310 200 324 188" stroke="#1A1210" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <path d="M356 100 l-13 -8 v16 z" fill="#E91E63"/>
+          <path d="M356 100 l13 -8 v16 z" fill="#E91E63"/>
+        </g>
+        <!-- bebê no centro -->
+        <g transform="translate(210,205)">
+          <ellipse cx="0" cy="0" rx="52" ry="46" fill="#5D4037"/>
+          <path d="M-38 -22 Q0 -44 38 -22" fill="#6D4C41"/>
+          <ellipse cx="0" cy="12" rx="34" ry="26" fill="#A1887F"/>
+          <circle cx="-16" cy="-6" r="7" fill="#2B1B12"/>
+          <circle cx="16" cy="-6" r="7" fill="#2B1B12"/>
+          <circle cx="-14" cy="-9" r="2.2" fill="#fff"/>
+          <circle cx="18" cy="-9" r="2.2" fill="#fff"/>
+          <ellipse cx="-6" cy="10" rx="4" ry="3" fill="#2B1B12"/>
+          <ellipse cx="6" cy="10" rx="4" ry="3" fill="#2B1B12"/>
+          <path d="M-12 22 Q0 32 12 22" stroke="#2B1B12" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <ellipse cx="0" cy="44" rx="14" ry="10" fill="#F4C430"/>
+          <ellipse cx="0" cy="47" rx="9" ry="6" fill="#E0A800"/>
+        </g>
+        <!-- corações -->
+        <path d="M60 60 c-6 -8 -17 -5 -17 4 c0 8 11 14 17 19 c6 -5 17 -11 17 -19 c0 -9 -11 -12 -17 -4 z" fill="#E91E63" opacity="0.55"/>
+        <path d="M360 60 c-6 -8 -17 -5 -17 4 c0 8 11 14 17 19 c6 -5 17 -11 17 -19 c0 -9 -11 -12 -17 -4 z" fill="#E91E63" opacity="0.55"/>
+      </svg>
+      <div class="legenda">Ilustração do conto — “o primeiro abraço de João Pedro”.</div>
+    </div>
+  </div>
+</section>
+
+<div class="divisor">· · ·</div>
+
+<!-- CAPÍTULO 6 -->
+<section class="fundo-branco">
+  <div class="container capitulo">
+    <span class="capitulo-num">Sexto Ato</span>
+    <h2>Crescer entre dois mundos</h2>
+
+    <p class="lead">
+      João Pedro cresceu do jeito que criança cresce: rápido demais e sem avisar.
+    </p>
+
+    <p>
+      Ele tinha a força da mãe e a curiosidade do pai. Subia em árvores com a agilidade de um chimpanzé,
+      mas parava no meio do caminho para olhar as folhas com a calma de uma gorila. Era um menino
+      de dois mundos, e isso nunca foi um problema — só uma característica.
+    </p>
+
+    <p>
+      Na escola da floresta, alguns bichos perguntavam de que espécie ele era. João Pedro pensava
+      um pouco e respondia sempre a mesma coisa:
+    </p>
+
+    <div class="fala">
+      Eu sou do Marceloxz e da Raquel. O resto é detalhe.
+      <span class="quem">— João Pedro, aos cinco anos</span>
+    </div>
+
+    <p>
+      Marceloxz anotou essa frase no caderninho. Já era a segunda frase da família naquele mesmo caderno.
+      Ele percebeu, naquele dia, que estava construindo uma coleção diferente: não era mais de manhãs bonitas.
+      Era de <strong>coisas que valiam a pena</strong>.
+    </p>
+
+    <p>
+      Raquel, do outro lado da caverna, olhava os dois e sorria sem dizer nada.
+      Como sempre.
+    </p>
+  </div>
+</section>
+
+<div class="divisor">· · ·</div>
+
+<!-- LINHA DO TEMPO -->
+<section class="fundo-verde">
+  <div class="container-largo">
+    <div class="section-title capitulo" style="text-align:center;margin-bottom:44px">
+      <span class="capitulo-num">Resumo do conto</span>
+      <h2 style="color:#FFE082">A história em linha do tempo</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <span class="ano">Capítulo 1</span>
+        <h4>Marceloxz e o caderninho</h4>
+        <p>Um chimpanzé sonhador anota tudo o que acha bonito e espera encontrar alguém que entenda.</p>
+      </div>
+      <div class="tl-item">
+        <span class="ano">Capítulo 2</span>
+        <h4>Raquel e o silêncio</h4>
+        <p>Uma gorila tranquila que resolve problemas esperando eles irem embora sozinhos.</p>
+      </div>
+      <div class="tl-item">
+        <span class="ano">Capítulo 3</span>
+        <h4>O rio de pedra</h4>
+        <p>Os dois se conhecem por acaso e conversam até o sol ficar laranja.</p>
+      </div>
+      <div class="tl-item">
+        <span class="ano">Capítulo 4</span>
+        <h4>A espera</h4>
+        <p>Juntos, descobrem que estão esperando um filhote — e que isso não muda nada entre eles.</p>
+      </div>
+      <div class="tl-item">
+        <span class="ano">Capítulo 5</span>
+        <h4>João Pedro chega</h4>
+        <p>Numa manhã de neblina, às seis e doze, nasce o filhote de dois mundos.</p>
+      </div>
+      <div class="tl-item">
+        <span class="ano">Capítulo 6</span>
+        <h4>Crescer é aprender a se explicar menos</h4>
+        <p>João Pedro entende cedo que família não se define por espécie, e sim por quem fica.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ÁRVORE GENEALÓGICA -->
+<section class="fundo-branco" id="arvore">
+  <div class="container-largo">
+    <div class="arvore">
+      <h3>Árvore da Família (fictícia)</h3>
+      <p class="sub">Uma família como qualquer outra — só um pouco mais peluda.</p>
+
+      <div class="arvore-linha">
+        <!-- Marceloxz -->
+        <div class="arvore-pessoa">
+          <svg viewBox="0 0 200 200">
+            <circle cx="34" cy="96" r="24" fill="#8D5524"/>
+            <circle cx="166" cy="96" r="24" fill="#8D5524"/>
+            <ellipse cx="100" cy="100" rx="66" ry="70" fill="#6B4226"/>
+            <path d="M58 48 Q70 24 86 44 Q100 16 114 44 Q130 24 142 48" fill="#6B4226"/>
+            <ellipse cx="100" cy="126" rx="44" ry="36" fill="#C68642"/>
+            <circle cx="78" cy="92" r="8" fill="#2B1B12"/>
+            <circle cx="122" cy="92" r="8" fill="#2B1B12"/>
+            <path d="M80 136 Q100 150 120 136" stroke="#2B1B12" stroke-width="5" fill="none" stroke-linecap="round"/>
+          </svg>
+          <div class="n">Marceloxz</div>
+          <div class="e">Chimpanzé</div>
+        </div>
+
+        <span class="mais">+</span>
+
+        <!-- Raquel -->
+        <div class="arvore-pessoa">
+          <svg viewBox="0 0 200 200">
+            <ellipse cx="100" cy="100" rx="70" ry="74" fill="#3B2A20"/>
+            <path d="M55 44 Q75 20 100 36 Q125 20 145 44" fill="#3B2A20"/>
+            <path d="M42 82 Q100 58 158 82" fill="#4A362A"/>
+            <circle cx="78" cy="94" r="8" fill="#1A1210"/>
+            <circle cx="122" cy="94" r="8" fill="#1A1210"/>
+            <ellipse cx="100" cy="132" rx="42" ry="32" fill="#5C4436"/>
+            <path d="M80 144 Q100 158 120 144" stroke="#1A1210" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <path d="M152 54 l-15 -9 v18 z" fill="#E91E63"/>
+            <path d="M152 54 l15 -9 v18 z" fill="#E91E63"/>
+          </svg>
+          <div class="n">Raquel</div>
+          <div class="e">Gorila</div>
+        </div>
+      </div>
+
+      <div class="arvore-seta">↓</div>
+
+      <div class="arvore-filho">
+        <svg viewBox="0 0 200 200">
+          <circle cx="42" cy="102" r="19" fill="#8D6E63"/>
+          <circle cx="158" cy="102" r="19" fill="#8D6E63"/>
+          <ellipse cx="100" cy="102" rx="60" ry="62" fill="#5D4037"/>
+          <path d="M66 52 Q80 30 100 44 Q120 30 134 52" fill="#5D4037"/>
+          <path d="M50 84 Q100 66 150 84" fill="#6D4C41"/>
+          <ellipse cx="100" cy="124" rx="40" ry="32" fill="#A1887F"/>
+          <circle cx="80" cy="96" r="8" fill="#2B1B12"/>
+          <circle cx="120" cy="96" r="8" fill="#2B1B12"/>
+          <path d="M84 134 Q100 148 116 134" stroke="#2B1B12" stroke-width="5" fill="none" stroke-linecap="round"/>
+        </svg>
+        <div class="n" style="color:#5D4037;font-size:1rem">João Pedro</div>
+        <div class="e">Meio gorila, meio chimpanzé, 100% ele mesmo</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FICHAS -->
+<section>
+  <div class="container-largo">
+    <div class="section-title capitulo" style="text-align:center;margin-bottom:44px">
+      <span class="capitulo-num">Extras do conto</span>
+      <h2>Ficha dos personagens</h2>
+    </div>
+    <div class="fichas">
+      <div class="ficha">
+        <h4>Marceloxz</h4>
+        <div class="apelido">“O que anota tudo”</div>
+        <ul>
+          <li><strong>Espécie:</strong> Chimpanzé (fictício)</li>
+          <li><strong>Idade:</strong> Não informada no conto</li>
+          <li><strong>Morada:</strong> Vale das Bananas Tortas</li>
+          <li><strong>Talento:</strong> Escrever em caderno de folhas</li>
+          <li><strong>Defeito:</strong> Fala demais quando fica nervoso</li>
+          <li><strong>Frase:</strong> “O céu das seis e doze é o mais bonito.”</li>
+        </ul>
+      </div>
+      <div class="ficha rosa">
+        <h4>Raquel</h4>
+        <div class="apelido">“A que espera o barulho passar”</div>
+        <ul>
+          <li><strong>Espécie:</strong> Gorila (fictícia)</li>
+          <li><strong>Morada original:</strong> Serra do Silêncio</li>
+          <li><strong>Talento:</strong> Ficar em silêncio sem incomodar ninguém</li>
+          <li><strong>Defeito:</strong> Demora para dizer o que sente</li>
+          <li><strong>Qualidade:</strong> Paciência infinita</li>
+          <li><strong>Frase:</strong> “Já é o suficiente.”</li>
+        </ul>
+      </div>
+      <div class="ficha amarela">
+        <h4>João Pedro</h4>
+        <div class="apelido">“O filhote de dois mundos”</div>
+        <ul>
+          <li><strong>Espécie:</strong> Meio gorila, meio chimpanzé (fictício)</li>
+          <li><strong>Nascimento:</strong> Manhã de neblina, 6h12</li>
+          <li><strong>Talento:</strong> Subir em árvore e depois parar para admirar</li>
+          <li><strong>Defeito:</strong> Pergunta tudo duas vezes</li>
+          <li><strong>Marca registrada:</strong> Dormia abraçado a um cacho de banana</li>
+          <li><strong>Frase:</strong> “Eu sou do Marceloxz e da Raquel.”</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MORAL -->
+<section class="fundo-branco" id="moral">
+  <div class="container-largo">
+    <div class="moral">
+      <span class="emoji">🍌</span>
+      <h3>A moral da história</h3>
+      <p>
+        Marceloxz era pequeno e falava muito. Raquel era grande e falava pouco.
+        João Pedro veio no meio dos dois e não precisou escolher de quem puxar —
+        ele puxou dos dois, e ficou completo.
+      </p>
+      <p>
+        No fim, o conto não é sobre espécies diferentes. É sobre gente (ou bicho)
+        que decide ficar. Porque família não é o que a gente é por fora:
+        é o que a gente escolhe ser por dentro.
+      </p>
+      <div class="assinatura">Fim — e começo de outra história</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container">
+    <h2>Gostou do conto?</h2>
+    <p>Essa história é fictícia e foi criada só para esta demonstração. Se quiser, você pode reescrever, ampliar ou transformar em série.</p>
+    <a href="#inicio" class="btn">Voltar ao início</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-container">
+    <div class="logo-footer">🍌 Contos do Marceloxz</div>
+    <p>Esta é uma página de demonstração criada para testar um cloaker serverside. O conto de Marceloxz, Raquel e João Pedro é inteiramente fictício e inventado para este exemplo.</p>
+    <p>Nenhum dado é coletado, nenhum formulário é enviado e nenhuma informação é armazenada.</p>
+    <div class="footer-aviso">
+      ⚠️ <strong>Aviso:</strong> personagens, espécies, lugares e acontecimentos são inventados.
+      Nenhuma pessoa, animal ou comunidade real está sendo representada. Página sem fins comerciais.
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Contos do Marceloxz (fictício) — DEMO EDUCACIONAL</span>
+    <span>Nada aqui é real. Era só uma historinha. 🐒</span>
+  </div>
+</footer>
 
 <script>
-  (function () {
-    var el = document.getElementById("jf-timer");
-    if (!el) return;
-    var t = 1199;
-    function tick() {
-      el.textContent = ("0" + ((t / 60) | 0)).slice(-2) + ":" + ("0" + t % 60).slice(-2);
-      t = t > 0 ? t - 1 : 1199;
-    }
-    tick();
-    setInterval(tick, 1000);
-  })();
+  // Demo: links "#" não fazem nada
+  document.querySelectorAll('a[href="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      alert('DEMO EDUCACIONAL: página fictícia, nenhuma ação real é executada.');
+    });
+  });
 </script>
-</div>
-    </div>
 
-  </div>
-
-  <div class="ftr" style="background:#000000">
-    <div class="ftr-t" style="color:#ffffff">© Copyright – Healthy Products</div>
-    <div class="ftr-s" style="color:#a4a4a4">All rights reserved</div>
-  </div>
-
-  <script>
-    // padding do body = altura real da barra fixa (mensagem de 1 ou 2 linhas)
-    (function(){
-      var bar=document.querySelector('.topbar');
-      function pad(){ if(bar) document.body.style.paddingTop=bar.offsetHeight+'px'; }
-      pad(); window.addEventListener('resize',pad);
-    })();
-    // {DATA} = hoje · {DATA+N} = hoje+N dias (MM/DD/YYYY) — sempre a data ATUAL do visitante
-    (function(){
-      var el=document.getElementById('topbar-msg'); if(!el) return;
-      el.textContent=el.textContent.replace(/\{DATA(?:\+(\d+))?\}/gi,function(_,n){
-        var d=new Date(); if(n) d.setDate(d.getDate()+parseInt(n,10));
-        var mm=String(d.getMonth()+1).padStart(2,'0'), dd=String(d.getDate()).padStart(2,'0');
-        return mm+'/'+dd+'/'+d.getFullYear();
-      });
-    })();
-    // REVEAL: mostra .esconder após 3406s de vídeo (vTurb) + scroll suave
-    (function(){
-      var delaySeconds = 3406;
-      function arm(){
-        var player=document.querySelector('vturb-smartplayer');
-        if(!player){ setTimeout(arm,500); return; }
-        player.addEventListener('player:ready',function(){
-          if (typeof player.displayHiddenElements==='function') {
-            player.displayHiddenElements(delaySeconds,['.esconder'],{persist:true});
-          } else {
-            setTimeout(function(){ document.querySelectorAll('.esconder').forEach(function(e){e.style.display='block';}); }, delaySeconds*1000);
-          }
-          var shown=false;
-          var iv=setInterval(function(){
-            var t=document.querySelector('.esconder');
-            if(t && getComputedStyle(t).display!=='none' && !shown){
-              shown=true; clearInterval(iv);
-              var s=document.getElementById('scrolldown');
-              if(s) s.scrollIntoView({behavior:'smooth',block:'start'});
-            }
-          },500);
-        });
-      }
-      arm();
-    })();
-    // ENCAMINHADOR DE UTM: repassa os params da URL para todos os links da página
-    (function(){
-      if(!location.search) return;
-      document.querySelectorAll('a[href]').forEach(function(a){
-        var href=a.getAttribute('href');
-        if(!href||href[0]==='#'||/^(javascript|mailto|tel):/i.test(href)) return;
-        try{
-          var u=new URL(a.href,location.origin);
-          new URLSearchParams(location.search).forEach(function(v,k){ if(!u.searchParams.has(k)) u.searchParams.set(k,v); });
-          a.setAttribute('href',u.toString());
-        }catch(e){}
-      });
-    })();
-  </script>
-
-
-</body></html>
+</body>
+</html>
